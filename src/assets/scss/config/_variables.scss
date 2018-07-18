@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+$tweeners: 348px;
+$tablet: 768px;
+$desktop: 1024px;
+$full: 1240px;
+
+$blue:    #425dc7 !default;
+$red:     #e9476c !default;
+$orange:  #f69d1e !default;
+$green:   #24c875 !default;
+
+$theme-colors: (
+  "dark-blue": #002660
+);
+
+$body-bg: #f6f6fa;
+$font-family-sans-serif: 'Roboto', sans-serif;
