@@ -1,0 +1,94 @@
+//global
+
+.bg-primary-dark {
+    background-color: $blue-dark;
+}
+
+.fa-layers {
+    position: relative;
+}
+
+.fa-layers-counter {
+    font-size: 0.75rem;
+}
+
+.fa-layers-bottom-right {
+    position: absolute;
+    bottom: -6px;
+    right: -7px;
+    border-radius: 5px;
+    padding: 0px 3px;
+}
+
+//navbar
+
+.navbar__account-dropdown {
+    font-size: 0.875rem;
+}
+
+.navbar--right {
+    font-size: 0.875rem;
+    .nav-item {
+        margin: 0 0.5rem;
+    }
+}
+
+.navbar__icon {
+    font-size: 1.125rem;
+    color: $navbar-icon-color;
+}
+
+.nav-link:hover {
+    .navbar__icon {
+        color: $navbar-dark-hover-color;
+    }
+}
+
+.navbar__icon--dropdown {
+    margin-right: 0.35rem;
+}
+
+.nav-item--start,
+.nav-item--end {
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 18px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        background-color: $navbar-icon-color;
+    }
+}
+
+.nav-item--start {
+    padding-left: 1rem;
+    &::before {
+        left: 0;
+    }
+}
+
+.nav-item--end {
+    padding-right: 1rem;
+    &::before {
+        right: 0;
+    }
+}
+
+//sidebar
+
+.main-sidebar {
+    background-color: #f9fafc;
+    border-right: solid 1px #d6deec;
+}
+
+.main-sidebar__header {
+    background-color: $primary;
+}
+
+.main-sidebar__lower-header {
+    background-color: $primary-dark;
+}

@@ -7,12 +7,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/all.css" />
     
     <!-- favicon -->
 
   </head>
 
   <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary-dark">
+
+      <a class="navbar-brand" href="#" title="Manchester City Dashboard">
+        <img src="assets/img/logo-manchester-city@2x.png" alt="Manchester City Dashboard" width="60">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown navbar__main-dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-bars navbar__icon--dropdown" aria-hidden="true"></i> Menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto navbar--right">
+          <li class="nav-item nav-item--start">
+            <a class="nav-link" href="#" title="Statistics" data-toggle="tooltip"]><i class="far fa-chart-bar navbar__icon" aria-hidden="true"></i><span class="sr-only">Statistics</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Listings" data-toggle="tooltip"]><i class="fas fa-book navbar__icon" aria-hidden="true"></i><span class="sr-only">Listings</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Bookmarks" data-toggle="tooltip"]><i class="far fa-bookmark navbar__icon" aria-hidden="true"></i><span class="sr-only">Bookmarks</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Messages" data-toggle="tooltip"]>
+              <span class="fa-layers fa-fw">
+                <i class="far fa-envelope navbar__icon" aria-hidden="true"></i>
+                <span class="sr-only">Messages</span>
+                <span class="fa-layers-counter fa-layers-bottom-right bg-primary-dark ">3</span>
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Information" data-toggle="tooltip"]><i class="fa fa-info navbar__icon" aria-hidden="true"></i><span class="sr-only">Information</span></a>
+          </li>
+          <li class="nav-item nav-item--end">
+            <a class="nav-link" href="#" title="Settings" data-toggle="tooltip"]><i class="fas fa-cog navbar__icon" aria-hidden="true"></i><span class="sr-only">Settings</span></a>
+          </li>
+          <li class="nav-item dropdown navbar__account-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user navbar__icon--dropdown" aria-hidden="true"></i> My account
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+
+          <div class="col-lg-3 d-none d-lg-block p-0 main-sidebar">
+            <div class="main-sidebar__header">
+              Sidebar header
+            </div>
+            <div class="main-sidebar__lower-header">
+              Sidebar Lower Header
+            </div>
+            <div class="main-sidebar__body">
+              Sidebar body
+            </div>
+          </div>
+    
+          <main role="main" class="col-lg-9 ml-sm-auto px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+              <h1 class="h2">Main Section</h1>
+  
+            </div>
+          </main>
+
+      </div>      
+    </div>
 
   <script src="bundle.js"></script>
   </body>
