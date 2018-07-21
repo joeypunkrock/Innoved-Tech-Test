@@ -78,6 +78,10 @@
     }
 }
 
+.nav-link.disabled {
+    cursor: default;
+}
+
 //sidebar
 
 .main-sidebar {
@@ -96,7 +100,7 @@
 //user card
 
 .user-card {
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem auto;
 }
 
 .user-card__image {
@@ -148,8 +152,12 @@
     }
 }
 
+.score-cards-holder {
+    margin: 0 auto 1rem auto;
+}
+
 .score-card {
-    margin: 0.25rem auto;
+    margin: 0.25rem 0.15rem;
 }
 
 .card-body--small {
@@ -180,7 +188,7 @@
 
 .assessment-nav__nav-item {
     text-align: center;
-    margin: 0 0.5rem;
+    margin: 0 0.25rem;
     .nav-link {
         padding: 0.5rem 1rem;
         border-radius: 10px;
@@ -254,6 +262,28 @@
         content: '\f023';
         color: $border-color;
     }
+}
+
+.column--assessment-due {
+    text-align: center;
+}
+
+.row--assessment-due {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.row--assessment-complete-button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.assessment-due-card {
+    margin: 1rem 0.5rem;
+}
+
+.assessment-complete-button {
+    margin: 0 0.5rem;
 }
 
 .assessment-progress {

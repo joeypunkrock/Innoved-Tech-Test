@@ -9,6 +9,28 @@
 }
 
 .assessment-progress {
-    font-size: 1rem;
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
+    width: 100%;
+}
+
+.row--assessment-due {
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.row--assessment-complete-button {
+    margin-top: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.assessment-complete-button {
+    margin: 0;
+}
+
+.assessment-due-card {
+    margin: 0;
 }

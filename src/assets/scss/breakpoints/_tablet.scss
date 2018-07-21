@@ -3,6 +3,7 @@
 .user-card {
     width: 100%;
     max-width: 360px;
+    margin: 0 0 1rem 0;
 }
 
 .user-card__content {
@@ -12,6 +13,7 @@
 .score-card {
     width: 100%;
     max-width: 340px;
+    min-width: 200px;
     margin: 0 0.5rem;
 }
 
@@ -29,6 +31,9 @@
 .assessment-progress {
     position: relative;
     left: -1.5rem;
-    width: 100%;
     margin: 0 auto;
+}
+
+.score-cards-holder {
+    margin: 0 0 1rem 0;
 }

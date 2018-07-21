@@ -125,7 +125,7 @@
                 </div>
               </div>
 
-              <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center border-bottom pb-4">
+              <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center border-bottom">
                 
                 <!-- user card -->
                 <div class="user-card d-flex flex-wrap flex-md-nowrap align-items-center">
@@ -151,43 +151,66 @@
                 <!-- /user card -->
 
                 <!-- score cards -->
-                <div class="card card--split score-card">
-                    <div class="card-body score-card__body d-flex justify-content-around flex-wrap flex-md-nowrap align-items-center">
-                    
-                      <div class="card__inner text-center">
-                          <h5 class="score-card__title mb-0">Completed</h5>
-                          <div class="score-card__score text-primary">60%</div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center score-cards-holder">
+
+                  <div class="card card--split score-card">
+                      <div class="card-body score-card__body d-flex justify-content-around flex-wrap flex-md-nowrap align-items-center">
+                      
+                        <div class="card__inner text-center">
+                            <h5 class="score-card__title mb-0">Completed</h5>
+                            <div class="score-card__score text-primary">60%</div>
+                        </div>
+
+                        <div class="card__inner text-center">
+                            <h5 class="score-card__title mb-0">Required</h5>
+                            <div class="score-card__score text-success">100%</div>
+                        </div>
+
                       </div>
-
-                      <div class="card__inner text-center">
-                          <h5 class="score-card__title mb-0">Required</h5>
-                          <div class="score-card__score text-success">100%</div>
-                      </div>
-
-                    </div>
-                </div>
-
-                <div class="card card--split score-card">
-                  <div class="card-body score-card__body d-flex justify-content-around flex-wrap flex-md-nowrap align-items-center">
-                    
-                    <div class="card__inner text-center">
-                        <h5 class="score-card__title mb-0">Current Score</h5>
-                        <div class="score-card__score text-primary">46</div>
-                    </div>
-
-                    <div class="card__inner text-center">
-                        <h5 class="score-card__title mb-0">Target Score</h5>
-                        <div class="score-card__score text-success">72</div>
-                    </div>
-
                   </div>
+
+                  <div class="card card--split score-card">
+                    <div class="card-body score-card__body d-flex justify-content-around flex-wrap flex-md-nowrap align-items-center">
+                      
+                      <div class="card__inner text-center">
+                          <h5 class="score-card__title mb-0">Current Score</h5>
+                          <div class="score-card__score text-primary">46</div>
+                      </div>
+
+                      <div class="card__inner text-center">
+                          <h5 class="score-card__title mb-0">Target Score</h5>
+                          <div class="score-card__score text-success">72</div>
+                      </div>
+
+                    </div>
+                  </div>
+
                 </div>
+                <!-- /score cards -->
 
               </div>
 
               <div class="row">
 
-                <div class="col-lg-8 col-md-12">
+                <div class="col-xl-4 col-lg-12 order-xl-12 column--assessment-due">
+                  
+                  <!-- assessment due date -->
+                  <div class="flex-row-reverse row--assessment-due">
+                    <div class="card assessment-due-card">
+                      <div class="card-body card-body--small">
+                        <i class="far fa-calendar-alt mr-2" aria-hidden="false"></i> Assessment due: 05 / July / 2018
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /assessment due date -->
+
+                  <div class="flex-row-reverse row--assessment-complete-button">
+                    <button id="assessmentCompleteButton" class="btn btn-primary assessment-complete-button disabled" title="Assessment is not yet completed" data-toggle="tooltip">Completed</button>
+                  </div>
+
+                </div>
+
+                <div class="col-xl-8 col-lg-12 order-xl-1">
 
                   <!-- assessment nav -->
                   <div class="assessment-progress">
@@ -204,7 +227,7 @@
 
                           <li class="nav-item assessment-nav__nav-item active">
                             <a class="nav-link" href="#">
-                              <div><i class="far fa-calendar-alt" aria-hidden="false"></i></div>
+                              <div><i class="fas fa-chart-pie" aria-hidden="false"></i></div>
                               Scores
                             </a>
                             <div class="step-status step-status--incomplete" title="Incomplete" data-toggle="tooltip">
@@ -213,7 +236,7 @@
                           </li>
                           <li class="nav-item assessment-nav__nav-item">
                             <a class="nav-link" href="#">
-                              <div><i class="far fa-calendar-alt" aria-hidden="false"></i></div>
+                              <div><i class="far fa-chart-bar" aria-hidden="false"></i></div>
                               Goals
                             </a>
                             <div class="step-status step-status--complete" title="Complete" data-toggle="tooltip">
@@ -222,7 +245,7 @@
                           </li>
                           <li class="nav-item assessment-nav__nav-item">
                             <a class="nav-link" href="#">
-                              <div><i class="far fa-calendar-alt" aria-hidden="false"></i></div>
+                              <div><i class="fas fa-list-ol" aria-hidden="false"></i></div>
                               Questions
                             </a>
                             <div class="step-status step-status--incomplete" title="Incomplete" data-toggle="tooltip">
@@ -231,7 +254,7 @@
                           </li>
                           <li class="nav-item assessment-nav__nav-item">
                             <a class="nav-link" href="#">
-                              <div><i class="far fa-calendar-alt" aria-hidden="false"></i></div>
+                              <div><i class="far fa-comment-dots" aria-hidden="false"></i></div>
                               Comments
                             </a>
                             <div class="step-status step-status--complete" title="Complete" data-toggle="tooltip">
@@ -240,7 +263,7 @@
                           </li>
                           <li class="nav-item assessment-nav__nav-item">
                             <a class="nav-link" href="#">
-                              <div><i class="far fa-calendar-alt" aria-hidden="false"></i></div>
+                              <div><i class="fas fa-list" aria-hidden="false"></i></div>
                               Targets
                             </a>
                             <div class="step-status step-status--complete" title="Complete" data-toggle="tooltip">
@@ -249,7 +272,7 @@
                           </li>
                           <li class="nav-item assessment-nav__nav-item">
                             <a class="nav-link disabled" href="#">
-                              <div><i class="far fa-calendar-alt" aria-hidden="false"></i></div>
+                              <div><i class="far fa-edit" aria-hidden="false"></i></div>
                               Signoff
                             </a>
                             <div class="step-status step-status--locked" title="Locked" data-toggle="tooltip">
@@ -270,24 +293,6 @@
 
                   </div>
                   <!-- /assessment nav -->
-
-                </div>
-
-                <div class="col-lg-4 col-md-12">
-                  
-                  <!-- assessment due date -->
-                  <div class="d-flex flex-row-reverse row--assessment-due">
-                    <div class="card assessment-due-card">
-                      <div class="card-body card-body--small">
-                        <i class="far fa-calendar-alt mr-2" aria-hidden="false"></i> Assessment due: 05 / July / 2018
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /assessment due date -->
-
-                  <div class="d-flex flex-row-reverse row--assessment-complete-button">
-                    <button class="btn btn-primary disabled" title="Assessment is not yet completed" data-toggle="tooltip">Completed</button>
-                  </div>
 
                 </div>
 
