@@ -15,9 +15,9 @@ module.exports = {
             }, {
                 loader: 'css-loader' // translates CSS into CommonJS modules
             }, {
-                loader: 'postcss-loader', // Run post css actions
+                loader: 'postcss-loader', // run post css actions
                 options: {
-                  plugins: function () { // post css plugins, can be exported to postcss.config.js
+                  plugins: function () { // post css plugins
                     return [
                       require('precss'),
                       require('autoprefixer')
@@ -25,7 +25,7 @@ module.exports = {
                   }
                 }
             }, {
-                loader: 'sass-loader' // compiles Sass to CSS
+                loader: 'sass-loader' // compiles sass to css
             }]
         }
     ]

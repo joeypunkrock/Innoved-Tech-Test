@@ -92,3 +92,184 @@
 .main-sidebar__lower-header {
     background-color: $primary-dark;
 }
+
+//user card
+
+.user-card {
+    margin-bottom: 1rem;
+}
+
+.user-card__image {
+    border-radius: 50%;
+    max-width: 80px;
+}
+
+.user-card__name {
+    font-weight: 600;
+    color: $blue-dark;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.user-card__category {
+    font-size: 0.8125em;
+}
+
+//cards
+
+.card {
+    border-color: $border-color;
+    border-radius: 0.75rem;
+}
+
+.card--split {
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 55%;
+        width: 1px;
+        background-color: $border-color;
+    }
+}
+
+.card__inner {
+    &:first-child {
+        padding-right: 0.5rem;
+    }
+    &:last-child {
+        padding-left: 0.5rem;
+    }
+}
+
+.score-card {
+    margin: 0.25rem auto;
+}
+
+.card-body--small {
+    padding: 0.5rem 1rem;
+}
+
+.score-card__title {
+    font-size: 0.6875em;
+}
+
+.score-card__score {
+    font-size: 1.25em;
+}
+
+.score-card__body {
+    padding-bottom: 0.75rem;
+    padding: 0.7rem 0.7rem 0.45rem 0.7rem;
+}
+
+
+//assessment nav
+
+.assessment-nav {
+    .navbar-nav {
+        width: 100%;
+    }
+}
+
+.assessment-nav__nav-item {
+    text-align: center;
+    margin: 0 0.5rem;
+    .nav-link {
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        color: $body-color;
+        @include transition(color 0.15s ease);
+        &:hover {
+            color: lighten($body-color, 20%);
+        }
+    }
+    &.active {
+        .nav-link {
+            background-color: $white;
+            color: $primary!important;
+        }
+    }
+}
+
+.navbar-light .navbar-nav {
+    .assessment-nav__nav-item {
+        .nav-link {
+            padding: 0.5rem 1rem;
+        }
+    }
+}
+
+.step-status {
+    position: relative;
+    border: solid 1px $border-color;
+    width: 20px;
+    height: 20px;
+    margin: 0.5rem auto;
+    border-radius: 50%;
+    font-size: 0.5em;
+    padding-top: 0.35em;
+    &::before {
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+    }
+}
+
+.step-status--complete {
+    background-color: $border-color;
+    color: $white;
+    &::before {
+        content: '\f00c';
+    }
+}
+
+.step-status--incomplete {
+    &::before {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 7px;
+        background-color: $border-color;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+.step-status--locked {
+    border-color: transparent;
+    font-size: 1.1em;
+    padding-top: 0;
+    margin-top: 0.2rem;
+    &::before {
+        content: '\f023';
+        color: $border-color;
+    }
+}
+
+.assessment-progress {
+    width: 90%;
+}
+
+.progress {
+    position: relative;
+    height: 0.3rem;
+    overflow: visible;
+}
+
+.progress-label {
+    position: absolute;
+    right: -42px;
+    top: -9px;
+    font-size: 1rem;
+    font-weight: 600;
+}

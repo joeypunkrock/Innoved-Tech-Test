@@ -1,47 +1,55 @@
-/*--------------------------------------------------------------
+/*---------------------
 # Config
---------------------------------------------------------------*/
+---------------------*/
+
 @import "config/mixins";
 @import "config/variables";
 
-/*--------------------------------------------------------------
+/*---------------------
 # Bootstrap
---------------------------------------------------------------*/
+---------------------*/
+
 @import "~bootstrap/scss/bootstrap";
 
-/*********************
+/*---------------------
+# Modules
+---------------------*/
+
+@import "modules/buttons";
+
+/*---------------------
 BASE STYLES
-*********************/
+---------------------*/
 
 @import "breakpoints/base";
 
-/*********************
+/*---------------------
 LARGER MOBILE DEVICES
-*********************/
+---------------------*/
 
 @media only screen and (min-width: $tweeners) {
     @import "breakpoints/_tweeners";
 }
 
-/*********************
+/*---------------------
 TABLET & SMALLER LAPTOPS
-*********************/
+---------------------*/
 
 @media only screen and (min-width: $tablet) {
     @import "breakpoints/_tablet";
 }
 
-/*********************
+/*---------------------
 DESKTOP
-*********************/
+---------------------*/
 
 @media only screen and (min-width: $desktop) {
     @import "breakpoints/_desktop";
 }
 
-/*********************
+/*---------------------
 LARGE VIEWING SIZE
-*********************/
+---------------------*/
 
 @media only screen and (min-width: $full) {
     @import "breakpoints/_full";
