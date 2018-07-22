@@ -362,6 +362,26 @@
     }
 }
 
+.accordion-header {
+    cursor: pointer;
+    background-color: $white;
+    @include transition(background-color 0.15s ease);
+    &.collapsed {
+        &:hover,
+        &:focus {
+            background-color: #f7f9ff;
+        }
+    }
+}
+
+.accordion-body {
+    background-color: $white;
+    order: solid 1px $border-color;
+    border-top: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
 .accordion-row--header {
     .accordion-row__item {
         display: none;
@@ -404,4 +424,12 @@
 .progress-label__score {
     font-weight: 600;
     font-size: 1.2em;
+}
+
+[data-toggle="collapse"] .fa:before {   
+  content: "\f139";
+}
+
+[data-toggle="collapse"].collapsed .fa:before {
+  content: "\f13a";
 }
