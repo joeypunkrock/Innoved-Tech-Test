@@ -226,8 +226,8 @@
 
                         <ul class="navbar-nav justify-content-around">
 
-                          <li class="nav-item assessment-nav__nav-item active">
-                            <a class="nav-link" href="#">
+                          <li class="nav-item assessment-nav__nav-item">
+                            <a class="nav-link assessment-link active" link="scores" href="#">
                               <div><i class="fas fa-chart-pie" aria-hidden="false"></i></div>
                               Scores
                             </a>
@@ -236,7 +236,7 @@
                             </div>
                           </li>
                           <li class="nav-item assessment-nav__nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link assessment-link" link="goals" href="#">
                               <div><i class="far fa-chart-bar" aria-hidden="false"></i></div>
                               Goals
                             </a>
@@ -245,7 +245,7 @@
                             </div>
                           </li>
                           <li class="nav-item assessment-nav__nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link assessment-link" link="questions" href="#">
                               <div><i class="fas fa-list-ol" aria-hidden="false"></i></div>
                               Questions
                             </a>
@@ -254,7 +254,7 @@
                             </div>
                           </li>
                           <li class="nav-item assessment-nav__nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link assessment-link" link="comments" href="#">
                               <div><i class="far fa-comment-dots" aria-hidden="false"></i></div>
                               Comments
                             </a>
@@ -263,7 +263,7 @@
                             </div>
                           </li>
                           <li class="nav-item assessment-nav__nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link assessment-link" link="targets" href="#">
                               <div><i class="fas fa-list" aria-hidden="false"></i></div>
                               Targets
                             </a>
@@ -272,7 +272,7 @@
                             </div>
                           </li>
                           <li class="nav-item assessment-nav__nav-item">
-                            <a class="nav-link disabled" href="#">
+                            <a class="nav-link assessment-link disabled" link="signoff" href="#">
                               <div><i class="far fa-edit" aria-hidden="false"></i></div>
                               Signoff
                             </a>
@@ -301,220 +301,8 @@
 
               <div class="mt-4">
                 
-                <!-- accordion -->
-                <div id="accordion" class="info-accordion">
-
-                    <!-- accordion header -->
-                    <div class="card-header accordion-header" id="scoresHeading1" data-toggle="collapse" data-target="#scoresCollapse1" aria-expanded="true" aria-controls="scoresCollapse1">
-                      
-                      <div class="row accordion-row accordion-row--header align-items-center">
-                        <div class="col-md-3">
-                          <h2 class="accordion-row__heading">Knowledge Skills</h2>
-                        </div>
-                        <div class="col-md-7">
-
-                          <div class="row align-items-center">
-                            <div class="col-md-3">
-                              <div class="accordion-row__item">Self Scores</div>
-                            </div>
-                            <div class="col-md-2">
-                              <div class="accordion-row__item">Assessor Scores</div>
-                            </div>
-                            <div class="col-md-2">
-                              <div class="accordion-row__item">Weighted Scores</div>
-                            </div>
-                            <div class="col-md-5">
-                              <div class="accordion-row__item">Comments (Optional)</div>
-                            </div>
-                          </div>
-
-                        </div>
-                        <div class="col-md-2 text-md-right">
-                            <div class="accordion-row__item">Files <i class="fa ml-2"></i></div>
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- /accordion header -->
-                    
-                    <!-- accordion body -->
-                    <div id="scoresCollapse1" class="accordion-body collapse show" aria-labelledby="scoresHeading1" data-parent="#accordion">
-                      <div class="card-body">
-                        
-                        <!-- accordion body section -->
-                        <div class="row accordion-row accordion-row--body align-items-center">
-                          <div class="col-md-3">
-
-                            <h3 class="h6 mb-4"><strong>Technical and Tactical</strong></h3>
-                            <input type="range" min="1" max="10" value="3" class="form-control-range range-slider" id="formControlRange" disabled>
-                            <div class="range-tag">Score set by Anthony Goulding</div>
-                            
-                          </div>
-                          <div class="col-md-8">
-
-                            <div class="row align-items-center">
-                              <div class="col-md-3">
-                                <div class="accordion-row__item" data-title="Self Scores"><span class="badge badge-danger badge--large">3</span> / Low</div>
-                              </div>
-                              <div class="col-md-2">
-                                <div class="accordion-row__item" data-title="Assessor Scores">5</div>
-                              </div>
-                              <div class="col-md-2">
-                                <div class="accordion-row__item" data-title="Weighted Scores">0.6</div>
-                              </div>
-                            </div>
-
-                          </div>
-                          <div class="col-md-1 text-md-right">
-                            <div class="accordion-row__item accordion-row__item--files" data-title="Files"><a href="#nogo" title="Upload Files" data-toggle="tooltip"><i class="fas fa-upload" aria-hidden="false"></i><span class="sr-only">Upload Files</span></a></div>
-                          </div>
-                        </div>
-                        <!-- /accordion body section -->
-
-                        <!-- accordion body section -->
-                        <div class="row accordion-row accordion-row--body align-items-center">
-                          <div class="col-md-3">
-
-                            <h3 class="h6 mb-4"><strong>Knowledge of Learning - Pedagogy</strong></h3>
-                            <input type="range" min="1" max="10" value="5" class="form-control-range range-slider" id="formControlRange" disabled>
-                            <div class="range-tag">Score set by Anthony Goulding</div>
-
-                          </div>
-                          <div class="col-md-8">
-
-                            <div class="row align-items-center">
-                              <div class="col-md-3">
-                                  <div class="accordion-row__item" data-title="Self Scores"><span class="badge badge-warning badge--large">5</span> / Average</div>
-                              </div>
-                              <div class="col-md-2">
-                                <div class="accordion-row__item" data-title="Assessor Scores">5</div>
-                              </div>
-                              <div class="col-md-2">
-                                <div class="accordion-row__item" data-title="Weighted Scores">0.6</div>
-                              </div>
-                              <div class="col-md-5">
-                                <div class="accordion-row__item accordion-row__item--comments" data-title="Comments">James has significantly improved the tactical side of his coaching. Needs to still improve on coaching the...</div>
-                              </div>
-                            </div>
-
-                          </div>
-                          <div class="col-md-1 text-md-right">
-                              <div class="accordion-row__item accordion-row__item--files"><a href="#nogo" title="Upload File" data-toggle="tooltip"><i class="fas fa-upload" aria-hidden="false"></i><span class="sr-only">Upload Files</span></a></div>
-                              <div class="accordion-row__item accordion-row__item--files"><a href="#nogo" title="Download Attachments (2)" data-toggle="tooltip"><i class="fas fa-paperclip" aria-hidden="false"></i><span class="sr-only">Download Attachments (2)</span> 2</a></div>
-                          </div>
-                        </div>
-                        <!-- /accordion body section -->
-
-                        <!-- accordion body section -->
-                        <div class="row accordion-row accordion-row--body align-items-center">
-                          <div class="col-md-3">
-
-                            <h3 class="h6 mb-4"><strong>Professional experience</strong></h3>
-                            <input type="range" min="1" max="10" value="8" class="form-control-range range-slider" id="formControlRange" disabled>
-                            <div class="range-tag">Score set by Anthony Goulding</div>
-
-                          </div>
-                          <div class="col-md-8">
-
-                            <div class="row align-items-center">
-                              <div class="col-md-3">
-                                  <div class="accordion-row__item" data-title="Self Scores"><span class="badge badge-success badge--large">8</span> / High</div>
-                              </div>
-                              <div class="col-md-2">
-                                <div class="accordion-row__item" data-title="Assessor Scores">6</div>
-                              </div>
-                              <div class="col-md-2">
-                                <div class="accordion-row__item" data-title="Weighted Scores">0.6</div>
-                              </div>
-                              <div class="col-md-5">
-                                <div class="accordion-row__item accordion-row__item--comments" data-title="Comments">James has significantly improved the tactical side of his coaching. Needs to still improve on coaching the...</div>
-                              </div>
-                            </div>
-
-                          </div>
-                          <div class="col-md-1 text-md-right">
-                              <div class="accordion-row__item accordion-row__item--files"><a href="#nogo" title="Upload File" data-toggle="tooltip"><i class="fas fa-upload" aria-hidden="false"></i><span class="sr-only">Upload Files</span></a></div>
-                          </div>
-                        </div>
-                        <!-- /accordion body section -->
-
-                        <!-- accordion body section -->
-                        <div class="row accordion-row accordion-row--body align-items-center">
-                          <div class="col-md-3">
-
-                            <h3 class="h6 mb-4"><strong>Leadership and manegement</strong></h3>
-                            <input type="range" min="1" max="10" value="8" class="form-control-range range-slider" id="formControlRange" disabled>
-                            <div class="range-tag">Score set by Anthony Goulding</div>
-
-                          </div>
-                          <div class="col-md-8">
-
-                            <div class="row align-items-center">
-                              <div class="col-md-3">
-                                  <div class="accordion-row__item" data-title="Self Scores"><span class="badge badge-success badge--large">8</span> / High</div>
-                              </div>
-                              <div class="col-md-2">
-                                <div class="accordion-row__item" data-title="Assessor Scores">8</div>
-                              </div>
-                              <div class="col-md-2">
-                                <div class="accordion-row__item" data-title="Weighted Scores">0.6</div>
-                              </div>
-                            </div>
-
-                          </div>
-                          <div class="col-md-1 text-md-right">
-                              <div class="accordion-row__item accordion-row__item--files"><a href="#nogo" title="Upload File" data-toggle="tooltip"><i class="fas fa-upload" aria-hidden="false"></i><span class="sr-only">Upload Files</span></a></div>
-                              <div class="accordion-row__item accordion-row__item--files"><a href="#nogo" title="Download Attachments (2)" data-toggle="tooltip"><i class="fas fa-paperclip" aria-hidden="false"></i><span class="sr-only">Download Attachments (2)</span> 2</a></div>
-                          </div>
-                        </div>
-                        <!-- /accordion body section -->
-
-                        <!-- accordion scores -->
-                        <div class="row accordion-row accordion-row--body mb-0 pb-0">
-                          <div class="col-sm">
-
-                            <div class="row align-items-center mt-2 mb-2">
-                              <div class="col-md-3">
-                                  <h3 class="h6"><strong>Total weighted score</strong></h3>
-                              </div>
-
-                              <div class="col-md-7">
-                                <div class="progress">
-                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 24%;" aria-valuenow="2.4" aria-valuemin="0" aria-valuemax="10"></div>
-                                </div>
-                              </div>
-
-                              <div class="col-md">
-                                  <div class="progress-label progress-label--total-score"><span class="progress-label__score text-danger">2.4</span>/100</div>
-                              </div>
-                            </div>
-
-                            <div class="row align-items-center mt-2 mb-2">
-                              <div class="col-md-3">
-                                  <h3 class="h6"><strong>Overall Score</strong></h3>
-                              </div>
-
-                              <div class="col-md-7">
-                                <div class="progress">
-                                  <div class="progress-bar bg-success" role="progressbar" style="width: 82%;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                              </div>
-
-                              <div class="col-md">
-                                  <div class="progress-label progress-label--total-score"><span class="progress-label__score text-success">82</span>/100</div>
-                              </div>
-                            </div>
-
-                          </div>
-                        </div>
-                        <!-- /accordion scores -->
-
-                      </div>
-                    </div>
-                    <!-- /accordion body -->
-
-                </div>
-                <!-- /accordion -->
+                <!-- assessment sections loaded in here via ajax $.get() request -->
+                <div id="assessmentSection"></div>
 
               </div>
     

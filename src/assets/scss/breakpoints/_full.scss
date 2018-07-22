@@ -52,19 +52,24 @@
     margin: 0px auto;
     width: 100%;
     border-radius: 10px;
+    @include transition(background-color 0.15s ease);
     &:first-child {
         border-radius: 10px;
     }
     border: solid 1px transparent;
     @include transition(width 0.25s ease-out);
     &.collapsed {
-        width: 96%;
+        width: 98%;
         border: solid 1px $border-color;
+        &:hover,
+        &:focus {
+            background-color: #f7f9ff;
+        }
     }
 }
 
 .accordion-body {
-    max-width: 96%;
+    max-width: 98%;
     margin: 0px auto;
     padding-top: 1rem;
     border: solid 1px $border-color;

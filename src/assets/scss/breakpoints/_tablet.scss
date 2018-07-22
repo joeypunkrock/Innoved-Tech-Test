@@ -40,7 +40,7 @@
 
 //accordions
 
-.info-accordion {
+.scores-accordion {
     font-size: 0.875rem;
 }
 
@@ -52,6 +52,11 @@
     .accordion-row__item {
         display: block;
     }
+}
+
+.accordion-header-right {
+    position: relative;
+    left: -2rem;
 }
 
 .accordion-row__item {

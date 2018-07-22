@@ -210,9 +210,7 @@
         &:hover {
             color: lighten($body-color, 20%);
         }
-    }
-    &.active {
-        .nav-link {
+        &.active {
             background-color: $white;
             color: $primary!important;
         }
@@ -356,6 +354,26 @@
 
 //accordion
 
+.scores-accordion {
+    margin-bottom: 1rem;
+    .accordion-header {
+        position: relative;
+        &::before {
+            position: absolute;
+            right: 20px;
+            top: 16px;
+            font-family: 'Font Awesome\ 5 Free';
+            font-weight: 900;
+        }
+        &::before {
+            content: "\f077";
+        }
+        &.collapsed::before {
+            content: "\f078";
+        }
+    }
+}
+
 .accordion-row {
     &:last-child {
         border-bottom: 0;
@@ -365,13 +383,6 @@
 .accordion-header {
     cursor: pointer;
     background-color: $white;
-    @include transition(background-color 0.15s ease);
-    &.collapsed {
-        &:hover,
-        &:focus {
-            background-color: #f7f9ff;
-        }
-    }
 }
 
 .accordion-body {
@@ -424,12 +435,4 @@
 .progress-label__score {
     font-weight: 600;
     font-size: 1.2em;
-}
-
-[data-toggle="collapse"] .fa:before {   
-  content: "\f139";
-}
-
-[data-toggle="collapse"].collapsed .fa:before {
-  content: "\f13a";
 }
