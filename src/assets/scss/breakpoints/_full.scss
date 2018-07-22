@@ -8,9 +8,18 @@
     min-width: 250px;
 }
 
+.assessment-nav {
+    -webkit-box-pack: initial;
+    -ms-flex-pack: initial;
+    justify-content: initial;
+}
+
 .assessment-progress {
-    margin-top: 3.5rem;
-    width: 100%;
+    margin: 3.5rem 0 0 0;
+    .progress {
+        left: 0;
+        width: 100%;
+    }
 }
 
 .row--assessment-due {

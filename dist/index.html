@@ -95,7 +95,7 @@
       <div class="row">
 
           <!-- sidebar -->
-          <div class="col-lg-3 d-none d-lg-block p-0 main-sidebar">
+          <div class="col-lg-3 d-lg-block p-0 main-sidebar">
             <div class="main-sidebar__header">
               Sidebar header
             </div>
@@ -217,14 +217,10 @@
                   <div class="assessment-progress">
 
                     <nav class="navbar navbar-expand-md assessment-nav">
-
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarAssessment" aria-controls="navbarAssessment" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
                     
-                      <div class="collapse navbar-collapse" id="navbarAssessment">
+                      <div id="navbarAssessment">
 
-                        <ul class="navbar-nav justify-content-around">
+                        <ul class="navbar-nav navbar-nav--assessment justify-content-around">
 
                           <li class="nav-item assessment-nav__nav-item">
                             <a class="nav-link assessment-link active" link="scores" href="#">
@@ -300,7 +296,7 @@
               </div>
 
               <div class="mt-4">
-                
+
                 <!-- assessment sections loaded in here via ajax $.get() request -->
                 <div id="assessmentSection"></div>
 

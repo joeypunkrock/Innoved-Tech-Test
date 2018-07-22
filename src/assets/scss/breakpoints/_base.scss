@@ -194,6 +194,10 @@
 //assessment nav
 
 .assessment-nav {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 1rem;
     .navbar-nav {
         width: 100%;
     }
@@ -202,6 +206,7 @@
 .assessment-nav__nav-item {
     text-align: center;
     margin: 0 0.25rem;
+    width: 46%;
     .nav-link {
         padding: 0.5rem 1rem;
         border-radius: 10px;
@@ -215,6 +220,15 @@
             color: $primary!important;
         }
     }
+}
+
+.navbar-nav--assessment {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .navbar-light .navbar-nav {
@@ -298,7 +312,13 @@
 }
 
 .assessment-progress {
-    width: 90%;
+    .progress {
+        width: 90%;
+        position: relative;
+        height: 0.3rem;
+        overflow: visible;
+    }
+    
 }
 
 .progress {
