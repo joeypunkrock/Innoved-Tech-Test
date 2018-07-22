@@ -37,3 +37,33 @@
 .score-cards-holder {
     margin: 0 0 1rem 0;
 }
+
+//accordions
+
+.info-accordion {
+    font-size: 0.875rem;
+}
+
+.accordion-row__item {
+    line-height: 1.2;
+}
+
+.accordion-row--header {
+    .accordion-row__item {
+        display: block;
+    }
+}
+
+.accordion-row__item {
+    &::before {
+        display: none;
+    }
+}
+
+.accordion-row__item--comments {
+    line-height: 2;
+}
+
+.accordion-row__item--files {
+    margin: 1rem 0;
+}

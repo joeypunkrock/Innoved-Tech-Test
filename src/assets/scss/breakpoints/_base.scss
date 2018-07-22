@@ -20,6 +20,15 @@
     padding: 0px 3px;
 }
 
+.badge--large {
+    font-size: 1em;
+    padding: 0.5rem 1rem 0.35rem 1rem;
+}
+
+.badge-warning {
+    color: $white;
+}
+
 //navbar
 
 .navbar__account-dropdown {
@@ -125,6 +134,10 @@
 .card {
     border-color: $border-color;
     border-radius: 0.75rem;
+}
+
+.card-header {
+    background-color: $white;
 }
 
 .card--split {
@@ -296,10 +309,99 @@
     overflow: visible;
 }
 
-.progress-label {
+.progress-label--assessment-nav {
     position: absolute;
     right: -42px;
     top: -9px;
     font-size: 1rem;
     font-weight: 600;
+}
+
+//range
+
+.rangeslider {
+    background: #dae1ee;
+    box-shadow: none;
+}
+
+.rangeslider--horizontal {
+    height: 7px;
+}
+
+.rangeslider__handle {
+    width: 28px;
+    height: 28px;
+    background: #6e8dfd;
+    border-color: transparent;
+    box-shadow: none;
+    &::after {
+        display: none;
+    }
+}
+
+.rangeslider__fill {
+    background: #6e8dfd;
+}
+
+.rangeslider--disabled {
+    opacity: 1;
+}
+
+.range-tag {
+    line-height: 1.1;
+    margin-top: 1.5rem;
+    border-bottom: solid 1px $border-color;
+    padding-bottom: 1rem;
+}
+
+//accordion
+
+.accordion-row {
+    &:last-child {
+        border-bottom: 0;
+    }
+}
+
+.accordion-row--header {
+    .accordion-row__item {
+        display: none;
+    }
+}
+
+.accordion-row__item {
+    &::before {
+        content: attr(data-title);
+        margin: 1rem 0;
+        min-width: 98px;
+        font-size: 0.9em;
+        line-height: 10px;
+        font-weight: bold;
+        color: #969696;
+        display: block;
+    }
+}
+
+.accordion-row--body {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-bottom: solid 1px $border-color;
+    &:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+.accordion-row__heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.progress-label--total-score {
+    font-size: 1.3em;
+}
+
+.progress-label__score {
+    font-weight: 600;
+    font-size: 1.2em;
 }
