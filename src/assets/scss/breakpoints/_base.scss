@@ -57,6 +57,14 @@
 
 select.form-control {
     cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background-image: url('/dist/assets/img/select-arrow.png');
+    background-repeat: no-repeat;
+    background-size: 11px;
+    background-position: 90% center;
     option {
         margin: 40px;
         background: $white;
@@ -201,6 +209,9 @@ select.form-control {
 
 .assessment-filter__col {
     padding-left: 0.25rem;
+    &:last-child {
+        padding-right: 0;
+    }
 }
 
 //user card
@@ -599,7 +610,7 @@ body {
     position: relative;
     z-index: 1;
     will-change: transform;
-    background-color: #FFF; /* A background-color is required */
+    background-color: $body-bg;
     min-height: 100vh;
     -webkit-box-shadow: -5px 0px 17px -3px rgba(0,0,0,0.2);
     -moz-box-shadow: -5px 0px 17px -3px rgba(0,0,0,0.2);

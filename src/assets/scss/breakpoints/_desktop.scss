@@ -53,3 +53,9 @@
 .sidebar-toggler {
     display: none;
 }
+
+.assessment-filter__col {
+    &:last-child {
+        padding-right: 0;
+    }
+}
