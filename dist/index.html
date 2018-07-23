@@ -17,296 +17,442 @@
   </head>
 
   <body>
+            
+    <!-- sidebar -->
+    <div id="sidebarSlidout">
+      <div class="main-sidebar">
+        <div id="sidebar-main">
 
-    <!-- main navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary-dark">
+          <!-- sidebar header/filter -->
+          <div class="main-sidebar__header">
 
-      <a class="navbar-brand" href="#" title="Manchester City Dashboard">
-        <img src="assets/img/logo-manchester-city@2x.png" alt="Manchester City Dashboard" width="60">
-      </a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarMain">
-        
-        <!-- navbar left -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown navbar__main-dropdown">
-            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-bars navbar__icon--dropdown" aria-hidden="true"></i> Menu
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-        <!-- /navbar left -->
-
-        <!-- navbar right -->
-        <ul class="navbar-nav ml-auto navbar--right">
-          <li class="nav-item nav-item--start">
-            <a class="nav-link" href="#" title="Statistics" data-toggle="tooltip"><i class="far fa-chart-bar navbar__icon" aria-hidden="true"></i><span class="sr-only">Statistics</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" title="Listings" data-toggle="tooltip"><i class="fas fa-book navbar__icon" aria-hidden="true"></i><span class="sr-only">Listings</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" title="Bookmarks" data-toggle="tooltip"><i class="far fa-bookmark navbar__icon" aria-hidden="true"></i><span class="sr-only">Bookmarks</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" title="Messages (3)" data-toggle="tooltip">
-              <span class="fa-layers fa-fw">
-                <i class="far fa-envelope navbar__icon" aria-hidden="true"></i>
-                <span class="sr-only">Messages</span>
-                <span class="fa-layers-counter fa-layers-bottom-right bg-primary-dark ">3</span>
-              </span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" title="Information" data-toggle="tooltip"><i class="fa fa-info navbar__icon" aria-hidden="true"></i><span class="sr-only">Information</span></a>
-          </li>
-          <li class="nav-item nav-item--end">
-            <a class="nav-link" href="#" title="Settings" data-toggle="tooltip"><i class="fas fa-cog navbar__icon" aria-hidden="true"></i><span class="sr-only">Settings</span></a>
-          </li>
-          <li class="nav-item dropdown navbar__account-dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-user navbar__icon--dropdown" aria-hidden="true"></i> My account
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-        <!-- /navbar right -->
-        
-      </div>
-    </nav>
-    <!-- /main navbar -->
-
-    <div class="container-fluid">
-      <div class="row">
-
-          <!-- sidebar -->
-          <div class="col-lg-3 d-lg-block p-0 main-sidebar">
-            <div class="main-sidebar__header">
-              Sidebar header
-            </div>
-            <div class="main-sidebar__lower-header">
-              Sidebar Lower Header
-            </div>
-            <div class="main-sidebar__body">
-              Sidebar body
-            </div>
-          </div>
-          <!-- /sidebar -->
+            <form name="assessmentFilter" id="assessmentFilter" class="main-sidebar__form-filter">
           
-          <!-- main body -->
-          <main role="main" class="col-lg-9 ml-sm-auto px-4">
-            <div class="pt-3 pb-2 mb-3 main-body">
-              
-              <div class="d-flex flex-row-reverse pt-1 pb-1 mb-3">
-                <div class="dropdown show">
-                  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-users mr-2" aria-hiden="true"></i> Assessment roles
-                  </a>
-                
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+              <div class="row row--assessment-filter align-items-center">
+                <div class="assessment-filter__col col-xl-6">
+                  <label for="assessmentName" class="sr-only">Assessment Name</label>
+                  <div class="input-flex-wrapper">
+                    <input type="text" name="assessmentName" id="assessmentName" placeholder="Assessment" class="form-control form-control--transparent text-light" autocomplete="off">
+                    <a href="#s" title="Search"  data-toggle="tooltip"><i class="fas fa-search text-light" aria-hidden="true"></i></a>
                   </div>
+                </div>
+                <div class="assessment-filter__col col-xl-3 p-0 pr-3-sm">
+                  <label for="assessmentFilters" class="sr-only">Filters</label>
+                  <select name="assessmentFilters" id="assessmentFilters" class="form-control form-control--transparent text-light">
+                    <option value="" selected placeholder disabled hidden>Filters</option>
+                    <option value="">None</option>
+                    <option value="filter1">Filter 1</option>
+                    <option value="filter2">Filter 2</option>
+                    <option value="filter2">Filter 2</option>
+                  </select>
+                </div>
+                <div class="assessment-filter__col col-xl-3 pl-0">
+                    <label for="assessmentMyLists" class="sr-only">My Lists</label>
+                    <select name="assessmentMyLists" id="assessmentMyLists" class="form-control form-control--transparent text-light">
+                      <option value="" selected placeholder disabled hidden>My Lists</option>
+                      <option value="">None</option>
+                      <option value="listItem1">List Item 1</option>
+                      <option value="listItem2">List Item 2</option>
+                      <option value="listItem3">List Item 2</option>
+                    </select>
                 </div>
               </div>
 
-              <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center border-bottom">
-                
-                <!-- user card -->
-                <div class="user-card d-flex flex-wrap flex-md-nowrap align-items-center">
-                  <img class="user-card__image mr-3" src="assets/img/user-thumb-simon-ramsay.jpg" alt="Simon Ramsay" title="Simon Ramsay">
-                  <div class="user-card__content">
+            </form>
 
-                    <div class="dropdown show mb-1">
-                      <a class="dropdown-toggle user-card__name" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Simon Ramsay
-                      </a>
-                    
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </div>
-
-                    <p class="user-card__category mb-0">Manchester City - Under 16s</p>
-
-                  </div>
-                </div>
-                <!-- /user card -->
-
-                <!-- score cards -->
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center score-cards-holder">
-
-                  <div class="card card--split score-card">
-                      <div class="card-body score-card__body d-flex justify-content-around flex-wrap flex-md-nowrap align-items-center">
-                      
-                        <div class="card__inner text-center">
-                            <h5 class="score-card__title mb-0">Completed</h5>
-                            <div class="score-card__score text-primary">60%</div>
-                        </div>
-
-                        <div class="card__inner text-center">
-                            <h5 class="score-card__title mb-0">Required</h5>
-                            <div class="score-card__score text-success">100%</div>
-                        </div>
-
-                      </div>
-                  </div>
-
-                  <div class="card card--split score-card">
-                    <div class="card-body score-card__body d-flex justify-content-around flex-wrap flex-md-nowrap align-items-center">
-                      
-                      <div class="card__inner text-center">
-                          <h5 class="score-card__title mb-0">Current Score</h5>
-                          <div class="score-card__score text-primary">46</div>
-                      </div>
-
-                      <div class="card__inner text-center">
-                          <h5 class="score-card__title mb-0">Target Score</h5>
-                          <div class="score-card__score text-success">72</div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-                <!-- /score cards -->
-
+            <div class="row align-items-center">
+              <div class="col-xl-7">
+                  <label for="assessmentAdvanced" class="label--assessment-advanced">Advanced</label>
+                  <select name="assessmentAdvanced" id="assessmentAdvanced" class="form-control form-control--transparent text-light input--assessment-advanced">
+                    <option value="advanced1" selected>Ready for sign off</option>
+                    <option value="advanced2">Advanced 2</option>
+                    <option value="advanced3">Advanced 3</option>
+                  </select>
               </div>
-
-              <div class="row">
-
-                <div class="col-xl-4 col-lg-12 order-xl-12 column--assessment-due">
-                  
-                  <!-- assessment due date -->
-                  <div class="flex-row-reverse row--assessment-due">
-                    <div class="card assessment-due-card">
-                      <div class="card-body card-body--small">
-                        <i class="far fa-calendar-alt mr-2" aria-hidden="false"></i> Assessment due: 05 / July / 2018
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /assessment due date -->
-
-                  <div class="flex-row-reverse row--assessment-complete-button">
-                    <button id="assessmentCompleteButton" class="btn btn-primary assessment-complete-button disabled" title="Assessment is not yet completed" data-toggle="tooltip">Completed</button>
-                  </div>
-
-                </div>
-
-                <div class="col-xl-8 col-lg-12 order-xl-1">
-
-                  <!-- assessment nav -->
-                  <div class="assessment-progress">
-
-                    <nav class="navbar navbar-expand-md assessment-nav">
-                    
-                      <div id="navbarAssessment">
-
-                        <ul class="navbar-nav navbar-nav--assessment justify-content-around">
-
-                          <li class="nav-item assessment-nav__nav-item">
-                            <a class="nav-link assessment-link active" link="scores" href="#">
-                              <div><i class="fas fa-chart-pie" aria-hidden="false"></i></div>
-                              Scores
-                            </a>
-                            <div class="step-status step-status--incomplete" title="Incomplete" data-toggle="tooltip">
-                              <span class="sr-only">Incomplete</span>
-                            </div>
-                          </li>
-                          <li class="nav-item assessment-nav__nav-item">
-                            <a class="nav-link assessment-link" link="goals" href="#">
-                              <div><i class="far fa-chart-bar" aria-hidden="false"></i></div>
-                              Goals
-                            </a>
-                            <div class="step-status step-status--complete" title="Complete" data-toggle="tooltip">
-                              <span class="sr-only">Complete</span>
-                            </div>
-                          </li>
-                          <li class="nav-item assessment-nav__nav-item">
-                            <a class="nav-link assessment-link" link="questions" href="#">
-                              <div><i class="fas fa-list-ol" aria-hidden="false"></i></div>
-                              Questions
-                            </a>
-                            <div class="step-status step-status--incomplete" title="Incomplete" data-toggle="tooltip">
-                              <span class="sr-only">Incomplete</span>
-                            </div>
-                          </li>
-                          <li class="nav-item assessment-nav__nav-item">
-                            <a class="nav-link assessment-link" link="comments" href="#">
-                              <div><i class="far fa-comment-dots" aria-hidden="false"></i></div>
-                              Comments
-                            </a>
-                            <div class="step-status step-status--complete" title="Complete" data-toggle="tooltip">
-                              <span class="sr-only">Complete</span>
-                            </div>
-                          </li>
-                          <li class="nav-item assessment-nav__nav-item">
-                            <a class="nav-link assessment-link" link="targets" href="#">
-                              <div><i class="fas fa-list" aria-hidden="false"></i></div>
-                              Targets
-                            </a>
-                            <div class="step-status step-status--complete" title="Complete" data-toggle="tooltip">
-                              <span class="sr-only">Complete</span>
-                            </div>
-                          </li>
-                          <li class="nav-item assessment-nav__nav-item">
-                            <a class="nav-link assessment-link disabled" link="signoff" href="#">
-                              <div><i class="far fa-edit" aria-hidden="false"></i></div>
-                              Signoff
-                            </a>
-                            <div class="step-status step-status--locked" title="Locked" data-toggle="tooltip">
-                              <span class="sr-only">Locked</span>
-                            </div>
-                          </li>
-
-                        </ul>
-
-                      </div>
-
-                    </nav>
-
-                    <div class="progress">
-                      <div class="progress-bar bg-success" role="progressbar" style="width: 86%;" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
-                      <div class="progress-label progress-label--assessment-nav text-success">86%</div>
-                    </div>
-
-                  </div>
-                  <!-- /assessment nav -->
-
-                </div>
-
+              <div class="col-xl-5">
+                <div class="text-light pl-1">Due within <span class="badge badge--light-blue badge--large">7</span> days</div>
               </div>
-
-              <div class="mt-4">
-
-                <!-- assessment sections loaded in here via ajax $.get() request -->
-                <div id="assessmentSection"></div>
-
-              </div>
-    
             </div>
-          </main>
-          <!-- /main body -->
 
-      </div>      
+          </div>
+          <!-- /sidebar header/filter -->
+
+          <div class="main-sidebar__lower-header">
+
+            <div class="row justify-content-between align-items-center">
+              <div class="col">
+                <span class="check-all-coaches" title="Check/Uncheck All">
+                  <input class="styled-checkbox" id="checkAllCoaches" type="checkbox">
+                  <label for="checkAllCoaches" class="check-all-coaches__label"></label>
+                  <i class="fas fa-chevron-down text-light"></i>
+                </span>
+              </div>
+              <div class="col text-right text-light">
+                  Coaches (4)
+              </div>
+            </div>
+
+          </div>
+
+          <div class="main-sidebar__body">
+
+            <ul class="nav nav--coaches flex-column" id="coachesList">
+
+              <li class="nav-item nav-item--coach">
+                <div class="row align-items-center">
+                  <div class="col-lg-2 p-0 text-center">
+                      <input class="styled-checkbox coach-checkbox" id="coach_lee_evans" type="checkbox">
+                      <label for="coach_lee_evans"></label>
+                  </div>
+                  <div class="col-lg-5 pl-0 coach__col">
+                    <img class="user-image user-image--icon mr-1" src="assets/img/user-thumb-simon-ramsay.jpg" alt="Lee Evans"> <div class="user-name">Lee Evans</div>
+                  </div>
+                  <div class="col-lg-5 text-lg-right coach__col">
+                    Ready for signoff <i class="far fa-edit ml-2 text-primary" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item nav-item--coach">
+                <div class="row align-items-center">
+                  <div class="col-lg-2 p-0 text-center">
+                      <input class="styled-checkbox coach-checkbox" id="coach_sarah_manning" type="checkbox">
+                      <label for="coach_sarah_manning"></label>
+                  </div>
+                  <div class="col-lg-5 pl-0 coach__col">
+                    <img class="user-image user-image--icon mr-1" src="assets/img/user-thumb-simon-ramsay.jpg" alt="Sarah Manning"> <div class="user-name">Sarah Manning</div>
+                  </div>
+                  <div class="col-lg-5 text-lg-right coach__col">
+                    Ready for signoff <i class="far fa-edit ml-2 text-primary" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item nav-item--coach">
+                <div class="row align-items-center">
+                  <div class="col-lg-2 p-0 text-center">
+                      <input class="styled-checkbox coach-checkbox" id="coach_simon_ramsay" type="checkbox">
+                      <label for="coach_simon_ramsay"></label>
+                  </div>
+                  <div class="col-lg-5 pl-0 coach__col">
+                    <img class="user-image user-image--icon mr-1" src="assets/img/user-thumb-simon-ramsay.jpg" alt="Simon Ramsay"> <div class="user-name">Simon Ramsay</div>
+                  </div>
+                  <div class="col-lg-5 text-lg-right coach__col">
+                    Ready for signoff <i class="far fa-edit ml-2 text-primary" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item nav-item--coach">
+                <div class="row align-items-center">
+                  <div class="col-lg-2 p-0 text-center">
+                      <input class="styled-checkbox coach-checkbox" id="coach_dawn_french" type="checkbox">
+                      <label for="coach_dawn_french"></label>
+                  </div>
+                  <div class="col-lg-5 pl-0 coach__col">
+                    <img class="user-image user-image--icon mr-1" src="assets/img/user-thumb-simon-ramsay.jpg" alt="Dawn French"> <div class="user-name">Dawn French</div>
+                  </div>
+                  <div class="col-lg-5 text-lg-right coach__col">
+                    Ready for signoff <i class="far fa-edit ml-2 text-primary" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- /sidebar -->
+
+    <div id="main">
+            
+      <!-- main navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-primary-dark">
+
+        <button class="navbar-toggler sidebar-toggler" type="button" aria-label="Toggle Sidebar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#" title="Manchester City Dashboard">
+          <img src="assets/img/logo-manchester-city@2x.png" alt="Manchester City Dashboard" width="60">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarMain">
+          
+          <!-- navbar left -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown navbar__main-dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bars navbar__icon--dropdown" aria-hidden="true"></i> Menu
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <!-- /navbar left -->
+
+          <!-- navbar right -->
+          <ul class="navbar-nav ml-auto navbar--right">
+            <li class="nav-item pseudo-border pseudo-border--left pl-3">
+              <a class="nav-link" href="#" title="Statistics" data-toggle="tooltip"><i class="far fa-chart-bar navbar__icon" aria-hidden="true"></i><span class="sr-only">Statistics</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" title="Listings" data-toggle="tooltip"><i class="fas fa-book navbar__icon" aria-hidden="true"></i><span class="sr-only">Listings</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" title="Bookmarks" data-toggle="tooltip"><i class="far fa-bookmark navbar__icon" aria-hidden="true"></i><span class="sr-only">Bookmarks</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" title="Messages (3)" data-toggle="tooltip">
+                <span class="fa-layers fa-fw">
+                  <i class="far fa-envelope navbar__icon" aria-hidden="true"></i>
+                  <span class="sr-only">Messages</span>
+                  <span class="fa-layers-counter fa-layers-bottom-right bg-primary-dark ">3</span>
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" title="Information" data-toggle="tooltip"><i class="fa fa-info navbar__icon" aria-hidden="true"></i><span class="sr-only">Information</span></a>
+            </li>
+            <li class="nav-item pseudo-border pseudo-border--right pr-3">
+              <a class="nav-link" href="#" title="Settings" data-toggle="tooltip"><i class="fas fa-cog navbar__icon" aria-hidden="true"></i><span class="sr-only">Settings</span></a>
+            </li>
+            <li class="nav-item dropdown navbar__account-dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user navbar__icon--dropdown" aria-hidden="true"></i> My account
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <!-- /navbar right -->
+          
+        </div>
+      </nav>
+      <!-- /main navbar -->
+
+      <div class="container-fluid">
+        <div class="row">
+
+          <!-- inject sidebar here for larger devices -->
+          <div id="sidebarStatic" class="col-lg-3 p-0"></div>
+
+            <!-- main body -->
+            <main role="main" class="col-lg-9 ml-sm-auto px-4">
+              <div class="pt-3 pb-2 mb-3 main-body">
+                
+                <div class="d-flex flex-row-reverse pt-1 pb-1 mb-3">
+                  <div class="dropdown show">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-users mr-2" aria-hiden="true"></i> Assessment roles
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center border-bottom">
+                  
+                  <!-- user card -->
+                  <div class="user-card d-flex flex-wrap flex-md-nowrap align-items-center">
+                    <img class="user-image user-card__user-image mr-3" src="assets/img/user-thumb-simon-ramsay.jpg" alt="Simon Ramsay" title="Simon Ramsay">
+                    <div class="user-card__content">
+
+                      <div class="dropdown show mb-1">
+                        <a class="dropdown-toggle user-card__name" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Simon Ramsay
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+
+                      <p class="user-card__category mb-0">Manchester City - Under 16s</p>
+
+                    </div>
+                  </div>
+                  <!-- /user card -->
+
+                  <!-- score cards -->
+                  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center score-cards-holder">
+
+                    <div class="card card--split score-card">
+                        <div class="card-body score-card__body d-flex justify-content-around flex-wrap flex-md-nowrap align-items-center">
+                        
+                          <div class="card__inner text-center">
+                              <h5 class="score-card__title mb-0">Completed</h5>
+                              <div class="score-card__score text-primary">60%</div>
+                          </div>
+
+                          <div class="card__inner text-center">
+                              <h5 class="score-card__title mb-0">Required</h5>
+                              <div class="score-card__score text-success">100%</div>
+                          </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card card--split score-card">
+                      <div class="card-body score-card__body d-flex justify-content-around flex-wrap flex-md-nowrap align-items-center">
+                        
+                        <div class="card__inner text-center">
+                            <h5 class="score-card__title mb-0">Current Score</h5>
+                            <div class="score-card__score text-primary">46</div>
+                        </div>
+
+                        <div class="card__inner text-center">
+                            <h5 class="score-card__title mb-0">Target Score</h5>
+                            <div class="score-card__score text-success">72</div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- /score cards -->
+
+                </div>
+
+                <div class="row">
+
+                  <div class="col-xl-4 col-lg-12 order-xl-12 column--assessment-due">
+                    
+                    <!-- assessment due date -->
+                    <div class="flex-row-reverse row--assessment-due">
+                      <div class="card assessment-due-card">
+                        <div class="card-body card-body--small">
+                          <i class="far fa-calendar-alt mr-2" aria-hidden="false"></i> Assessment due: 05 / July / 2018
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /assessment due date -->
+
+                    <div class="flex-row-reverse row--assessment-complete-button">
+                      <button id="assessmentCompleteButton" class="btn btn-primary assessment-complete-button disabled" title="Assessment is not yet completed" data-toggle="tooltip">Completed</button>
+                    </div>
+
+                  </div>
+
+                  <div class="col-xl-8 col-lg-12 order-xl-1">
+
+                    <!-- assessment nav -->
+                    <div class="assessment-progress">
+
+                      <nav class="navbar navbar-expand-md assessment-nav">
+                      
+                        <div id="navbarAssessment">
+
+                          <ul class="navbar-nav navbar-nav--assessment justify-content-around">
+
+                            <li class="nav-item assessment-nav__nav-item">
+                              <a class="nav-link assessment-link active" link="scores" href="#">
+                                <div><i class="fas fa-chart-pie" aria-hidden="false"></i></div>
+                                Scores
+                              </a>
+                              <div class="step-status step-status--incomplete" title="Incomplete" data-toggle="tooltip">
+                                <span class="sr-only">Incomplete</span>
+                              </div>
+                            </li>
+                            <li class="nav-item assessment-nav__nav-item">
+                              <a class="nav-link assessment-link" link="goals" href="#">
+                                <div><i class="far fa-chart-bar" aria-hidden="false"></i></div>
+                                Goals
+                              </a>
+                              <div class="step-status step-status--complete" title="Complete" data-toggle="tooltip">
+                                <span class="sr-only">Complete</span>
+                              </div>
+                            </li>
+                            <li class="nav-item assessment-nav__nav-item">
+                              <a class="nav-link assessment-link" link="questions" href="#">
+                                <div><i class="fas fa-list-ol" aria-hidden="false"></i></div>
+                                Questions
+                              </a>
+                              <div class="step-status step-status--incomplete" title="Incomplete" data-toggle="tooltip">
+                                <span class="sr-only">Incomplete</span>
+                              </div>
+                            </li>
+                            <li class="nav-item assessment-nav__nav-item">
+                              <a class="nav-link assessment-link" link="comments" href="#">
+                                <div><i class="far fa-comment-dots" aria-hidden="false"></i></div>
+                                Comments
+                              </a>
+                              <div class="step-status step-status--complete" title="Complete" data-toggle="tooltip">
+                                <span class="sr-only">Complete</span>
+                              </div>
+                            </li>
+                            <li class="nav-item assessment-nav__nav-item">
+                              <a class="nav-link assessment-link" link="targets" href="#">
+                                <div><i class="fas fa-list" aria-hidden="false"></i></div>
+                                Targets
+                              </a>
+                              <div class="step-status step-status--complete" title="Complete" data-toggle="tooltip">
+                                <span class="sr-only">Complete</span>
+                              </div>
+                            </li>
+                            <li class="nav-item assessment-nav__nav-item">
+                              <a class="nav-link assessment-link disabled" link="signoff" href="#">
+                                <div><i class="far fa-edit" aria-hidden="false"></i></div>
+                                Signoff
+                              </a>
+                              <div class="step-status step-status--locked" title="Locked" data-toggle="tooltip">
+                                <span class="sr-only">Locked</span>
+                              </div>
+                            </li>
+
+                          </ul>
+
+                        </div>
+
+                      </nav>
+
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 86%;" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-label progress-label--assessment-nav text-success">86%</div>
+                      </div>
+
+                    </div>
+                    <!-- /assessment nav -->
+
+                  </div>
+
+                </div>
+
+                <div class="mt-4">
+
+                  <!-- assessment sections loaded in here via ajax $.get() request -->
+                  <div id="assessmentSection"></div>
+
+                </div>
+      
+              </div>
+            </main>
+            <!-- /main body -->
+
+        </div>      
+      </div>
+
     </div>
 
   <!-- bundled css & js -->

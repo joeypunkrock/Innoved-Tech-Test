@@ -44,6 +44,10 @@
     margin: 0;
 }
 
+.nav-item--coach {;
+    padding: 0.5rem;
+}
+
 //accordions
 .accordion-row__section--left {
     width: 25%;
@@ -85,4 +89,33 @@
     border-top: 0;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
+}
+
+.row--assessment-filter {
+    .assessment-filter__col {
+        &:first-child,
+        &:last-child {
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 1px;
+                height: 18px;
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+                background-color: #7988d3;
+            }
+        }
+        &:first-child {
+            &::before {
+                right: 0;
+            }
+        }
+        &:last-child {
+            &::before {
+                left: 0;
+            }
+        }
+    }
 }

@@ -14,3 +14,42 @@
 .score-card__body {
     padding: 1.25rem;
 }
+
+.slideout-panel {
+    margin-left: 0;
+}
+
+.slideout-menu {
+    display: block;
+    position: relative;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.btn-hamburger {
+    display: none;
+}
+
+.main-sidebar__header {
+    font-size: 0.8rem;
+    line-height: 1;
+    .form-control {
+        font-size: 1em;
+    }
+}
+
+.coach__col {
+    margin-bottom: 0;
+}
+
+.nav-item--coach {
+    text-align: initial;
+}
+
+.nav--coaches {
+    font-size: 0.8rem;
+}
+
+.sidebar-toggler {
+    display: none;
+}

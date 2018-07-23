@@ -26,6 +26,7 @@
     "bootstrap": "^4.1.2",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3",
-    "rangeslider.js": "^2.3.2"
+    "rangeslider.js": "^2.3.2",
+    "slideout": "^1.0.1"
   }
 }

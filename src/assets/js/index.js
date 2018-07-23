@@ -2,6 +2,7 @@
 import $ from 'jquery';
 import 'bootstrap';
 import 'rangeslider.js';
+import Slideout from 'slideout';
 import '../scss/style.scss';
 
 //load bootstrap tooltips
@@ -72,3 +73,81 @@ $(document).on("click", '.hide-collapse', function(e) {
     const element = $(this).attr('element');
     $(element).collapse('hide');
 });
+
+//check/uncheck all coaches in coaches list
+$('#checkAllCoaches').change(function() {
+    if (this.checked) {
+        $('#coachesList').find('.coach-checkbox').prop('checked', true);
+    } else {
+        $('#coachesList').find('.coach-checkbox').prop('checked', false);
+    }
+});
+
+/*! Smart Resize */
+(function ($) {
+
+    var $event = $.event,
+        $special,
+        resizeTimeout;
+
+    $special = $event.special.debouncedresize = {
+        setup: function () {
+            $(this).on("resize", $special.handler);
+        },
+        teardown: function () {
+            $(this).off("resize", $special.handler);
+        },
+        handler: function (event, execAsap) {
+            // Save the context
+            var context = this,
+                args = arguments,
+                dispatch = function () {
+                    // set correct event type
+                    event.type = "debouncedresize";
+                    $event.dispatch.apply(context, args);
+                };
+
+            if (resizeTimeout) {
+                clearTimeout(resizeTimeout);
+            }
+
+            execAsap ?
+                dispatch() :
+                resizeTimeout = setTimeout(dispatch, $special.threshold);
+        },
+        threshold: 150
+    };
+
+})($);
+/* /Smart Resize */
+
+const slideout = new Slideout({
+    'panel': document.getElementById('main'),
+    'menu': document.getElementById('sidebar-main'),
+    'padding': 256,
+    'tolerance': 70
+});
+
+// Toggle button
+document.querySelector('.sidebar-toggler').addEventListener('click', function() {
+    slideout.toggle();
+});
+
+//set the sidebar position based on browser width. (On smaller devices the sidebar will slideout)
+function setSidebarPos() {
+    var detach = $('body').find(".main-sidebar").detach();
+    if (window.matchMedia('(min-width: 992px)').matches) {
+        $(detach).appendTo($('body').find("#sidebarStatic"));
+        console.log('desktop');
+    } else {
+        $(detach).appendTo($('body').find("#sidebarSlidout"));
+        console.log('mobile');
+    }
+}
+
+//on resize
+$(window).on("debouncedresize", function(event) {
+    setSidebarPos();
+});
+
+setSidebarPos();
