@@ -1,0 +1,1199 @@
+/*---------------------
+# Config
+---------------------*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900");
+/*---------------------
+# Bootstrap
+---------------------*/
+/*---------------------
+# Modules
+---------------------*/
+/* line 1, ../scss/modules/_buttons.scss */
+.btn {
+  border-radius: 25px;
+  padding: 0.375rem 1.7rem;
+}
+
+/* line 6, ../scss/modules/_buttons.scss */
+.btn-primary.disabled, .btn-primary:disabled {
+  background: #ccd7ec;
+  border-color: #ccd7ec;
+}
+/* line 9, ../scss/modules/_buttons.scss */
+.btn-primary.disabled:hover, .btn-primary:disabled:hover {
+  background: #ccd7ec;
+}
+
+/*---------------------
+BASE STYLES
+---------------------*/
+/* line 3, ../scss/breakpoints/_base.scss */
+.bg-primary-dark {
+  background-color: #002660;
+}
+
+/* line 7, ../scss/breakpoints/_base.scss */
+.fa-layers {
+  position: relative;
+}
+
+/* line 11, ../scss/breakpoints/_base.scss */
+.fa-layers-counter {
+  display: none;
+}
+
+/* line 15, ../scss/breakpoints/_base.scss */
+.fa-layers-bottom-right {
+  position: absolute;
+  bottom: -6px;
+  right: -7px;
+  border-radius: 5px;
+  padding: 0px 3px;
+}
+
+/* line 23, ../scss/breakpoints/_base.scss */
+.badge--large {
+  font-size: 1em;
+  padding: 0.5rem 1rem 0.35rem 1rem;
+}
+
+/* line 28, ../scss/breakpoints/_base.scss */
+.badge-warning {
+  color: #ffffff;
+}
+
+/* line 32, ../scss/breakpoints/_base.scss */
+.badge--light-blue {
+  background-color: #7288d5;
+}
+
+/* line 39, ../scss/breakpoints/_base.scss */
+.form-control--transparent {
+  background-color: transparent;
+  border-color: transparent;
+}
+/* line 42, ../scss/breakpoints/_base.scss */
+.form-control--transparent:focus {
+  background-color: transparent;
+  border-color: transparent;
+}
+/* line 10, ../scss/config/_mixins.scss */
+.form-control--transparent.text-light.placeholder {
+  color: #ffffff;
+}
+/* line 11, ../scss/config/_mixins.scss */
+.form-control--transparent.text-light:-moz-placeholder {
+  color: #ffffff;
+}
+/* line 12, ../scss/config/_mixins.scss */
+.form-control--transparent.text-light::-moz-placeholder {
+  color: #ffffff;
+}
+/* line 13, ../scss/config/_mixins.scss */
+.form-control--transparent.text-light:-ms-input-placeholder {
+  color: #ffffff;
+}
+/* line 14, ../scss/config/_mixins.scss */
+.form-control--transparent.text-light::-webkit-input-placeholder {
+  color: #ffffff;
+}
+/* line 10, ../scss/config/_mixins.scss */
+.form-control--transparent.text-light:focus.placeholder {
+  color: #d9d9d9;
+}
+/* line 11, ../scss/config/_mixins.scss */
+.form-control--transparent.text-light:focus:-moz-placeholder {
+  color: #d9d9d9;
+}
+/* line 12, ../scss/config/_mixins.scss */
+.form-control--transparent.text-light:focus::-moz-placeholder {
+  color: #d9d9d9;
+}
+/* line 13, ../scss/config/_mixins.scss */
+.form-control--transparent.text-light:focus:-ms-input-placeholder {
+  color: #d9d9d9;
+}
+/* line 14, ../scss/config/_mixins.scss */
+.form-control--transparent.text-light:focus::-webkit-input-placeholder {
+  color: #d9d9d9;
+}
+
+/* line 58, ../scss/breakpoints/_base.scss */
+select.form-control {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  background-image: url("/dist/assets/img/select-arrow.png");
+  background-repeat: no-repeat;
+  background-size: 11px;
+  background-position: 90% center;
+}
+/* line 68, ../scss/breakpoints/_base.scss */
+select.form-control option {
+  margin: 40px;
+  background: #ffffff;
+  color: #000000;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* line 78, ../scss/breakpoints/_base.scss */
+.input-flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 87, ../scss/breakpoints/_base.scss */
+.label--assessment-advanced {
+  margin-bottom: 0;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.58);
+  padding-left: 0.35em;
+  position: relative;
+  top: 10px;
+}
+
+/* line 96, ../scss/breakpoints/_base.scss */
+.input--assessment-advanced {
+  padding-left: 0;
+}
+
+/* line 102, ../scss/breakpoints/_base.scss */
+.navbar__account-dropdown {
+  font-size: 0.875rem;
+}
+
+/* line 106, ../scss/breakpoints/_base.scss */
+.navbar--right {
+  font-size: 0.875rem;
+}
+/* line 108, ../scss/breakpoints/_base.scss */
+.navbar--right .nav-item {
+  margin: 0 0.5rem;
+}
+/* line 111, ../scss/breakpoints/_base.scss */
+.navbar--right .fa-layers {
+  text-align: left;
+}
+
+/* line 116, ../scss/breakpoints/_base.scss */
+.navbar__link-name {
+  margin-left: 0.5rem;
+}
+
+/* line 120, ../scss/breakpoints/_base.scss */
+.navbar__icon {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.6);
+  width: 20px;
+}
+
+/* line 127, ../scss/breakpoints/_base.scss */
+.nav-link:hover .navbar__icon {
+  color: white;
+}
+
+/* line 132, ../scss/breakpoints/_base.scss */
+.navbar__icon--dropdown {
+  margin-right: 0.35rem;
+}
+
+/* line 136, ../scss/breakpoints/_base.scss */
+.nav-link.disabled {
+  cursor: default;
+}
+
+/* line 142, ../scss/breakpoints/_base.scss */
+.main-sidebar {
+  background-color: #f9fafc;
+  border-right: solid 1px #d6deec;
+  height: 100%;
+}
+
+/* line 148, ../scss/breakpoints/_base.scss */
+.main-sidebar__header {
+  background-color: #425dc7;
+  padding: 1rem;
+}
+
+/* line 153, ../scss/breakpoints/_base.scss */
+.main-sidebar__lower-header {
+  background-color: #3752ba;
+  padding: 1rem;
+}
+
+/* line 158, ../scss/breakpoints/_base.scss */
+.main-sidebar__body {
+  padding: 1rem;
+}
+
+/* line 162, ../scss/breakpoints/_base.scss */
+.main-sidebar__form-filter {
+  border-bottom: solid 1px #7988d3;
+  padding-bottom: 0.75rem;
+}
+/* line 165, ../scss/breakpoints/_base.scss */
+.main-sidebar__form-filter .form-control--transparent {
+  border-radius: 0;
+}
+
+/* line 170, ../scss/breakpoints/_base.scss */
+.nav--coaches {
+  display: block;
+}
+
+/* line 174, ../scss/breakpoints/_base.scss */
+.nav-item--coach {
+  background-color: #fff;
+  padding: 0.5rem 1.25rem;
+  border-radius: 7px;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* line 183, ../scss/breakpoints/_base.scss */
+.coach__col {
+  margin-bottom: 1rem;
+}
+
+/* line 187, ../scss/breakpoints/_base.scss */
+.check-all-coaches__label {
+  top: 10px;
+}
+
+/* line 191, ../scss/breakpoints/_base.scss */
+.assessment-filter__col {
+  padding-left: 0.25rem;
+}
+/* line 193, ../scss/breakpoints/_base.scss */
+.assessment-filter__col:last-child {
+  padding-right: 0;
+}
+
+/* line 200, ../scss/breakpoints/_base.scss */
+.user-image {
+  border-radius: 50%;
+}
+
+/* line 204, ../scss/breakpoints/_base.scss */
+.user-image--icon {
+  width: 35px;
+}
+
+/* line 208, ../scss/breakpoints/_base.scss */
+.user-name {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 213, ../scss/breakpoints/_base.scss */
+.user-card {
+  margin: 0 auto 1rem auto;
+}
+
+/* line 217, ../scss/breakpoints/_base.scss */
+.user-card__user-image {
+  max-width: 80px;
+}
+
+/* line 221, ../scss/breakpoints/_base.scss */
+.user-card__name {
+  font-weight: 600;
+  color: #002660;
+}
+/* line 224, ../scss/breakpoints/_base.scss */
+.user-card__name:hover {
+  text-decoration: none;
+}
+
+/* line 229, ../scss/breakpoints/_base.scss */
+.user-card__category {
+  font-size: 0.8125em;
+}
+
+/* line 235, ../scss/breakpoints/_base.scss */
+.card {
+  border-color: #dae1ee;
+  border-radius: 0.75rem;
+}
+
+/* line 240, ../scss/breakpoints/_base.scss */
+.card-header {
+  background-color: #ffffff;
+}
+
+/* line 245, ../scss/breakpoints/_base.scss */
+.card--split::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 55%;
+  width: 1px;
+  background-color: #dae1ee;
+}
+
+/* line 261, ../scss/breakpoints/_base.scss */
+.card__inner:first-child {
+  padding-right: 0.5rem;
+}
+/* line 264, ../scss/breakpoints/_base.scss */
+.card__inner:last-child {
+  padding-left: 0.5rem;
+}
+
+/* line 269, ../scss/breakpoints/_base.scss */
+.score-cards-holder {
+  margin: 0 auto 1rem auto;
+}
+
+/* line 273, ../scss/breakpoints/_base.scss */
+.score-card {
+  margin: 0.25rem 0.15rem;
+}
+
+/* line 277, ../scss/breakpoints/_base.scss */
+.card-body--small {
+  padding: 0.5rem 1rem;
+}
+
+/* line 281, ../scss/breakpoints/_base.scss */
+.score-card__title {
+  font-size: 0.6875em;
+}
+
+/* line 285, ../scss/breakpoints/_base.scss */
+.score-card__score {
+  font-size: 1.25em;
+}
+
+/* line 289, ../scss/breakpoints/_base.scss */
+.score-card__body {
+  padding-bottom: 0.75rem;
+  padding: 0.7rem 0.7rem 0.45rem 0.7rem;
+}
+
+/* line 297, ../scss/breakpoints/_base.scss */
+.assessment-nav {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+/* line 302, ../scss/breakpoints/_base.scss */
+.assessment-nav .navbar-nav {
+  width: 100%;
+}
+
+/* line 307, ../scss/breakpoints/_base.scss */
+.assessment-nav__nav-item {
+  text-align: center;
+  margin: 0 0.25rem;
+  width: 46%;
+}
+/* line 311, ../scss/breakpoints/_base.scss */
+.assessment-nav__nav-item .nav-link {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: #6d82a8;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  -o-transition: color 0.15s ease;
+}
+/* line 316, ../scss/breakpoints/_base.scss */
+.assessment-nav__nav-item .nav-link:hover {
+  color: #adb9ce;
+}
+/* line 319, ../scss/breakpoints/_base.scss */
+.assessment-nav__nav-item .nav-link.active {
+  background-color: #ffffff;
+  color: #425dc7 !important;
+}
+
+/* line 326, ../scss/breakpoints/_base.scss */
+.navbar-nav--assessment {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* line 337, ../scss/breakpoints/_base.scss */
+.navbar-light .navbar-nav .assessment-nav__nav-item .nav-link {
+  padding: 0.5rem 1rem;
+}
+
+/* line 343, ../scss/breakpoints/_base.scss */
+.step-status {
+  position: relative;
+  border: solid 1px #dae1ee;
+  width: 20px;
+  height: 20px;
+  margin: 0.5rem auto;
+  border-radius: 50%;
+  font-size: 0.5em;
+  padding-top: 0.35em;
+}
+/* line 352, ../scss/breakpoints/_base.scss */
+.step-status::before {
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+}
+
+/* line 358, ../scss/breakpoints/_base.scss */
+.step-status--complete {
+  background-color: #dae1ee;
+  color: #ffffff;
+}
+/* line 361, ../scss/breakpoints/_base.scss */
+.step-status--complete::before {
+  content: '\f00c';
+}
+
+/* line 367, ../scss/breakpoints/_base.scss */
+.step-status--incomplete::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 7px;
+  background-color: #dae1ee;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* line 382, ../scss/breakpoints/_base.scss */
+.step-status--locked {
+  border-color: transparent;
+  font-size: 1.1em;
+  padding-top: 0;
+  margin-top: 0.2rem;
+}
+/* line 387, ../scss/breakpoints/_base.scss */
+.step-status--locked::before {
+  content: '\f023';
+  color: #dae1ee;
+}
+
+/* line 393, ../scss/breakpoints/_base.scss */
+.column--assessment-due {
+  text-align: center;
+}
+
+/* line 397, ../scss/breakpoints/_base.scss */
+.row--assessment-due {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 402, ../scss/breakpoints/_base.scss */
+.row--assessment-complete-button {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 407, ../scss/breakpoints/_base.scss */
+.assessment-due-card {
+  margin: 1rem 0.5rem;
+}
+
+/* line 411, ../scss/breakpoints/_base.scss */
+.assessment-complete-button {
+  margin: 0 0.5rem;
+}
+
+/* line 416, ../scss/breakpoints/_base.scss */
+.assessment-progress .progress {
+  width: 90%;
+  position: relative;
+  height: 0.3rem;
+  overflow: visible;
+}
+
+/* line 425, ../scss/breakpoints/_base.scss */
+.progress {
+  position: relative;
+  height: 0.3rem;
+  overflow: visible;
+}
+
+/* line 431, ../scss/breakpoints/_base.scss */
+.progress-label--assessment-nav {
+  position: absolute;
+  right: -42px;
+  top: -9px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* line 441, ../scss/breakpoints/_base.scss */
+.rangeslider {
+  background: #dae1ee;
+  box-shadow: none;
+}
+
+/* line 446, ../scss/breakpoints/_base.scss */
+.rangeslider--horizontal {
+  height: 7px;
+}
+
+/* line 450, ../scss/breakpoints/_base.scss */
+.rangeslider__handle {
+  width: 28px;
+  height: 28px;
+  background: #6e8dfd;
+  border-color: transparent;
+  box-shadow: none;
+  cursor: default;
+}
+/* line 457, ../scss/breakpoints/_base.scss */
+.rangeslider__handle::after {
+  display: none;
+}
+
+/* line 462, ../scss/breakpoints/_base.scss */
+.rangeslider__fill {
+  background: #6e8dfd;
+}
+
+/* line 466, ../scss/breakpoints/_base.scss */
+.rangeslider--disabled {
+  opacity: 1;
+}
+
+/* line 470, ../scss/breakpoints/_base.scss */
+.range-tag {
+  line-height: 1.1;
+  margin-top: 1.5rem;
+  border-bottom: solid 1px #dae1ee;
+  padding-bottom: 1rem;
+}
+
+/* line 479, ../scss/breakpoints/_base.scss */
+.scores-accordion {
+  margin-bottom: 1rem;
+}
+/* line 481, ../scss/breakpoints/_base.scss */
+.scores-accordion .accordion-header {
+  position: relative;
+}
+/* line 483, ../scss/breakpoints/_base.scss */
+.scores-accordion .accordion-header::before {
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+}
+/* line 490, ../scss/breakpoints/_base.scss */
+.scores-accordion .accordion-header::before {
+  content: "\f077";
+}
+/* line 493, ../scss/breakpoints/_base.scss */
+.scores-accordion .accordion-header.collapsed::before {
+  content: "\f078";
+}
+
+/* line 500, ../scss/breakpoints/_base.scss */
+.accordion-row:last-child {
+  border-bottom: 0;
+}
+
+/* line 505, ../scss/breakpoints/_base.scss */
+.accordion-header {
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+/* line 510, ../scss/breakpoints/_base.scss */
+.accordion-body {
+  background-color: #ffffff;
+  order: solid 1px #dae1ee;
+  border-top: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* line 519, ../scss/breakpoints/_base.scss */
+.accordion-row--header .accordion-row__item {
+  display: none;
+}
+
+/* line 525, ../scss/breakpoints/_base.scss */
+.accordion-row__item::before {
+  content: attr(data-title);
+  margin: 1rem 0;
+  min-width: 98px;
+  font-size: 0.9em;
+  line-height: 10px;
+  font-weight: bold;
+  color: #969696;
+  display: block;
+}
+
+/* line 537, ../scss/breakpoints/_base.scss */
+.accordion-row--body {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-bottom: solid 1px #dae1ee;
+}
+/* line 541, ../scss/breakpoints/_base.scss */
+.accordion-row--body:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* line 547, ../scss/breakpoints/_base.scss */
+.accordion-row__heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+/* line 553, ../scss/breakpoints/_base.scss */
+.progress-label--total-score {
+  font-size: 1.3em;
+}
+
+/* line 557, ../scss/breakpoints/_base.scss */
+.progress-label__score {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+/* line 565, ../scss/breakpoints/_base.scss */
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 570, ../scss/breakpoints/_base.scss */
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  min-height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none;
+}
+
+/* line 582, ../scss/breakpoints/_base.scss */
+.slideout-menu-left {
+  left: 0;
+}
+
+/* line 586, ../scss/breakpoints/_base.scss */
+.slideout-menu-right {
+  right: 0;
+}
+
+/* line 590, ../scss/breakpoints/_base.scss */
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: #f6f6fa;
+  min-height: 100vh;
+  -webkit-box-shadow: -5px 0px 17px -3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -5px 0px 17px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 0px 17px -3px rgba(0, 0, 0, 0.2);
+}
+
+/* line 601, ../scss/breakpoints/_base.scss */
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+/* line 607, ../scss/breakpoints/_base.scss */
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+/* line 612, ../scss/breakpoints/_base.scss */
+.styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+/* line 616, ../scss/breakpoints/_base.scss */
+.styled-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+/* line 623, ../scss/breakpoints/_base.scss */
+.styled-checkbox + label:before {
+  content: '';
+  margin-right: 10px;
+  display: block;
+  vertical-align: -webkit-baseline-middle;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border: solid 2px #dae1ee;
+  border-radius: 4px;
+}
+/* line 636, ../scss/breakpoints/_base.scss */
+.styled-checkbox:hover + label:before {
+  background: #dae1ee;
+}
+/* line 646, ../scss/breakpoints/_base.scss */
+.styled-checkbox:checked + label:before {
+  background: #425dc7;
+}
+/* line 651, ../scss/breakpoints/_base.scss */
+.styled-checkbox:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+/* line 657, ../scss/breakpoints/_base.scss */
+.styled-checkbox:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+/* line 663, ../scss/breakpoints/_base.scss */
+.styled-checkbox:checked + label:after {
+  content: '\f00c';
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  color: #fff;
+  font-size: 11px;
+}
+
+/*---------------------
+LARGER MOBILE DEVICES
+---------------------*/
+/*---------------------
+TABLET & SMALLER LAPTOPS
+---------------------*/
+@media only screen and (min-width: 768px) {
+  /* line 3, ../scss/breakpoints/_tablet.scss */
+  .user-card {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 0 1rem 0;
+  }
+
+  /* line 9, ../scss/breakpoints/_tablet.scss */
+  .user-card__content {
+    min-width: 130px;
+  }
+
+  /* line 13, ../scss/breakpoints/_tablet.scss */
+  .score-card {
+    width: 100%;
+    max-width: 340px;
+    min-width: 200px;
+    margin: 0 0.5rem;
+  }
+
+  /* line 20, ../scss/breakpoints/_tablet.scss */
+  .assessment-nav {
+    margin-top: 0;
+  }
+
+  /* line 24, ../scss/breakpoints/_tablet.scss */
+  .navbar-nav--assessment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  /* line 33, ../scss/breakpoints/_tablet.scss */
+  .navbar-nav .assessment-nav__nav-item {
+    width: auto;
+  }
+  /* line 35, ../scss/breakpoints/_tablet.scss */
+  .navbar-nav .assessment-nav__nav-item .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* line 41, ../scss/breakpoints/_tablet.scss */
+  .navbar__link-name {
+    display: none;
+  }
+
+  /* line 45, ../scss/breakpoints/_tablet.scss */
+  .navbar__icon {
+    width: auto;
+  }
+
+  /* line 50, ../scss/breakpoints/_tablet.scss */
+  .navbar--right .fa-layers {
+    text-align: left;
+  }
+
+  /* line 55, ../scss/breakpoints/_tablet.scss */
+  .navbar__link-name {
+    margin-left: 0;
+  }
+
+  /* line 59, ../scss/breakpoints/_tablet.scss */
+  .fa-layers-counter {
+    display: block;
+    font-size: 0.75rem;
+  }
+
+  /* line 64, ../scss/breakpoints/_tablet.scss */
+  .assessment-due-card {
+    min-width: 300px;
+  }
+
+  /* line 68, ../scss/breakpoints/_tablet.scss */
+  .assessment-progress {
+    margin: 1rem auto 0 auto;
+  }
+  /* line 70, ../scss/breakpoints/_tablet.scss */
+  .assessment-progress .progress {
+    width: 94%;
+  }
+
+  /* line 75, ../scss/breakpoints/_tablet.scss */
+  .score-cards-holder {
+    margin: 0 0 1rem 0;
+  }
+
+  /* line 81, ../scss/breakpoints/_tablet.scss */
+  .scores-accordion {
+    font-size: 0.875rem;
+  }
+
+  /* line 85, ../scss/breakpoints/_tablet.scss */
+  .accordion-row__item {
+    line-height: 1.2;
+  }
+
+  /* line 90, ../scss/breakpoints/_tablet.scss */
+  .accordion-row--header .accordion-row__item {
+    display: block;
+  }
+
+  /* line 95, ../scss/breakpoints/_tablet.scss */
+  .accordion-header-right {
+    position: relative;
+    left: -2rem;
+  }
+
+  /* line 101, ../scss/breakpoints/_tablet.scss */
+  .accordion-row__item::before {
+    display: none;
+  }
+
+  /* line 106, ../scss/breakpoints/_tablet.scss */
+  .accordion-row__item--comments {
+    line-height: 2;
+  }
+
+  /* line 110, ../scss/breakpoints/_tablet.scss */
+  .accordion-row__item--files {
+    margin: 1rem 0;
+  }
+
+  /* line 114, ../scss/breakpoints/_tablet.scss */
+  .navbar-toggler.sidebar-toggler {
+    display: block;
+    margin-right: 1rem;
+  }
+}
+/*---------------------
+DESKTOP
+---------------------*/
+@media only screen and (min-width: 992px) {
+  /* line 1, ../scss/breakpoints/_desktop.scss */
+  .pseudo-border {
+    position: relative;
+  }
+  /* line 3, ../scss/breakpoints/_desktop.scss */
+  .pseudo-border::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 18px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  /* line 17, ../scss/breakpoints/_desktop.scss */
+  .pseudo-border--right::before {
+    right: 0;
+  }
+
+  /* line 23, ../scss/breakpoints/_desktop.scss */
+  .pseudo-border--left::before {
+    left: 0;
+  }
+
+  /* line 30, ../scss/breakpoints/_desktop.scss */
+  .navbar--right .nav-item:first-child {
+    padding-left: 1rem;
+  }
+
+  /* line 36, ../scss/breakpoints/_desktop.scss */
+  .assessment-progress {
+    margin-top: 1rem;
+  }
+
+  /* line 41, ../scss/breakpoints/_desktop.scss */
+  .card-inner:first-child {
+    padding-right: 1.5rem;
+  }
+  /* line 44, ../scss/breakpoints/_desktop.scss */
+  .card-inner:last-child {
+    padding-left: 1.5rem;
+  }
+
+  /* line 49, ../scss/breakpoints/_desktop.scss */
+  .score-card__body {
+    padding: 1.25rem;
+  }
+
+  /* line 53, ../scss/breakpoints/_desktop.scss */
+  .slideout-panel {
+    margin-left: 0;
+  }
+
+  /* line 57, ../scss/breakpoints/_desktop.scss */
+  .slideout-menu {
+    display: block;
+    position: relative;
+    overflow-y: auto;
+    width: 100%;
+  }
+
+  /* line 64, ../scss/breakpoints/_desktop.scss */
+  .btn-hamburger {
+    display: none;
+  }
+
+  /* line 68, ../scss/breakpoints/_desktop.scss */
+  .main-sidebar__header {
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+  /* line 71, ../scss/breakpoints/_desktop.scss */
+  .main-sidebar__header .form-control {
+    font-size: 1em;
+  }
+
+  /* line 76, ../scss/breakpoints/_desktop.scss */
+  .nav--coaches {
+    display: block;
+  }
+
+  /* line 80, ../scss/breakpoints/_desktop.scss */
+  .nav-item--coach {
+    background-color: #fff;
+    padding: 0.5rem 1.25rem;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  /* line 89, ../scss/breakpoints/_desktop.scss */
+  .coach__col {
+    margin-bottom: 1rem;
+  }
+
+  /* line 94, ../scss/breakpoints/_desktop.scss */
+  .sidebar-toggler {
+    display: none;
+  }
+
+  /* line 99, ../scss/breakpoints/_desktop.scss */
+  #sidebarSlidout .main-sidebar {
+    display: none;
+  }
+
+  /* line 105, ../scss/breakpoints/_desktop.scss */
+  .assessment-filter__col:last-child {
+    padding-right: 0;
+  }
+
+  /* line 110, ../scss/breakpoints/_desktop.scss */
+  .navbar-toggler.sidebar-toggler {
+    display: none;
+  }
+}
+/*---------------------
+LARGE VIEWING SIZE
+---------------------*/
+@media only screen and (min-width: 1200px) {
+  /* line 1, ../scss/breakpoints/_full.scss */
+  .main-body {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  /* line 6, ../scss/breakpoints/_full.scss */
+  .score-card {
+    font-size: 1.2rem;
+    min-width: 250px;
+  }
+
+  /* line 11, ../scss/breakpoints/_full.scss */
+  .assessment-nav {
+    -webkit-box-pack: initial;
+    -ms-flex-pack: initial;
+    justify-content: initial;
+  }
+
+  /* line 17, ../scss/breakpoints/_full.scss */
+  .assessment-progress {
+    margin: 3.5rem 0 0 0;
+  }
+  /* line 19, ../scss/breakpoints/_full.scss */
+  .assessment-progress .progress {
+    left: 0;
+    width: 100%;
+  }
+
+  /* line 25, ../scss/breakpoints/_full.scss */
+  .row--assessment-due {
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  /* line 32, ../scss/breakpoints/_full.scss */
+  .row--assessment-complete-button {
+    margin-top: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  /* line 39, ../scss/breakpoints/_full.scss */
+  .assessment-complete-button {
+    margin: 0;
+  }
+
+  /* line 43, ../scss/breakpoints/_full.scss */
+  .assessment-due-card {
+    margin: 0;
+  }
+
+  /* line 47, ../scss/breakpoints/_full.scss */
+  .nav-item--coach {
+    padding: 0.5rem;
+  }
+
+  /* line 52, ../scss/breakpoints/_full.scss */
+  .accordion-row__section--left {
+    width: 25%;
+  }
+
+  /* line 56, ../scss/breakpoints/_full.scss */
+  .accordion-row__section--center {
+    width: 70%;
+  }
+
+  /* line 60, ../scss/breakpoints/_full.scss */
+  .accordion-row__section--right {
+    width: 5%;
+  }
+
+  /* line 64, ../scss/breakpoints/_full.scss */
+  .accordion-header {
+    margin: 0px auto;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-transition: background-color 0.15s ease;
+    -moz-transition: background-color 0.15s ease;
+    -o-transition: background-color 0.15s ease;
+    border: solid 1px transparent;
+    -webkit-transition: width 0.25s ease-out;
+    -moz-transition: width 0.25s ease-out;
+    -o-transition: width 0.25s ease-out;
+  }
+  /* line 69, ../scss/breakpoints/_full.scss */
+  .accordion-header:first-child {
+    border-radius: 10px;
+  }
+  /* line 74, ../scss/breakpoints/_full.scss */
+  .accordion-header.collapsed {
+    width: 98%;
+    border: solid 1px #dae1ee;
+  }
+  /* line 77, ../scss/breakpoints/_full.scss */
+  .accordion-header.collapsed:hover, .accordion-header.collapsed:focus {
+    background-color: #f7f9ff;
+  }
+
+  /* line 84, ../scss/breakpoints/_full.scss */
+  .accordion-body {
+    max-width: 98%;
+    margin: 0px auto;
+    padding-top: 1rem;
+    border: solid 1px #dae1ee;
+    border-top: 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  /* line 98, ../scss/breakpoints/_full.scss */
+  .row--assessment-filter .assessment-filter__col:first-child::before, .row--assessment-filter .assessment-filter__col:last-child::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 18px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-color: #7988d3;
+  }
+  /* line 111, ../scss/breakpoints/_full.scss */
+  .row--assessment-filter .assessment-filter__col:first-child::before {
+    right: 0;
+  }
+  /* line 116, ../scss/breakpoints/_full.scss */
+  .row--assessment-filter .assessment-filter__col:last-child::before {
+    left: 0;
+  }
+
+  /* line 124, ../scss/breakpoints/_full.scss */
+  .coach__col {
+    margin-bottom: 0;
+  }
+
+  /* line 128, ../scss/breakpoints/_full.scss */
+  .nav-item--coach {
+    text-align: initial;
+  }
+
+  /* line 132, ../scss/breakpoints/_full.scss */
+  .nav--coaches {
+    font-size: 0.8rem;
+  }
+}
