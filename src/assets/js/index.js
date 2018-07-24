@@ -22,7 +22,7 @@ initRangeslider();
 //function to switch between the assessment navigation items
 function getAssessmentSection(link) {
     //use the passed link variable to load the matching .html page
-    $.get( "inc/"+link+".html", function( data ) {
+    $.get( "inc/assessment-modules/"+link+".html", function( data ) {
         $( "#assessmentSection" ).html( data );
     })
     .done(function() {
@@ -121,6 +121,7 @@ $('#checkAllCoaches').change(function() {
 })($);
 /* /Smart Resize */
 
+//init slideout (sidebar)
 const slideout = new Slideout({
     'panel': document.getElementById('main'),
     'menu': document.getElementById('sidebar-main'),

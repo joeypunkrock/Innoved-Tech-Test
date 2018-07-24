@@ -1,3 +1,38 @@
+.pseudo-border {
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 18px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        background-color: $navbar-icon-color;
+    }
+}
+
+.pseudo-border--right {
+    &::before {
+        right: 0;
+    }
+}
+
+.pseudo-border--left {
+    &::before {
+        left: 0;
+    }
+}
+
+.navbar--right {
+    .nav-item {
+        &:first-child {
+            padding-left: 1rem;
+        }
+    }
+}
+
 .assessment-progress {
     margin-top: 1rem;
 }
@@ -38,24 +73,40 @@
     }
 }
 
-.coach__col {
-    margin-bottom: 0;
+.nav--coaches {
+    display: block;
 }
 
 .nav-item--coach {
-    text-align: initial;
+    background-color: #fff;
+    padding: 0.5rem 1.25rem;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    text-align: center;
 }
 
-.nav--coaches {
-    font-size: 0.8rem;
+.coach__col {
+    margin-bottom: 1rem;
 }
+
 
 .sidebar-toggler {
     display: none;
+}
+
+#sidebarSlidout {
+    .main-sidebar {
+        display: none;
+    }
 }
 
 .assessment-filter__col {
     &:last-child {
         padding-right: 0;
     }
+}
+
+.navbar-toggler.sidebar-toggler {
+    display: none;
 }

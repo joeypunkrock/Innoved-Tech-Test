@@ -1,0 +1,146 @@
+<div class="main-sidebar">
+    <div id="sidebar-main">
+
+        <!-- sidebar header/filter -->
+        <div class="main-sidebar__header">
+
+        <form name="assessmentFilter" id="assessmentFilter" class="main-sidebar__form-filter">
+        
+            <div class="row row--assessment-filter align-items-center">
+                <div class="assessment-filter__col col-xl-6">
+                    <label for="assessmentName" class="sr-only">Assessment Name</label>
+                    <div class="input-flex-wrapper">
+                        <input type="text" name="assessmentName" id="assessmentName" placeholder="Assessment" class="form-control form-control--transparent text-light" autocomplete="off">
+                        <a href="#s" title="Search"  data-toggle="tooltip"><i class="fas fa-search text-light" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="assessment-filter__col col-xl-3 p-0 pr-3-sm">
+                    <label for="assessmentFilters" class="sr-only">Filters</label>
+                    <select name="assessmentFilters" id="assessmentFilters" class="form-control form-control--transparent text-light">
+                        <option value="" selected placeholder disabled hidden>Filters</option>
+                        <option value="">None</option>
+                        <option value="filter1">Filter 1</option>
+                        <option value="filter2">Filter 2</option>
+                        <option value="filter2">Filter 2</option>
+                    </select>
+                </div>
+                <div class="assessment-filter__col col-xl-3 pl-0">
+                    <label for="assessmentMyLists" class="sr-only">My Lists</label>
+                    <select name="assessmentMyLists" id="assessmentMyLists" class="form-control form-control--transparent text-light">
+                        <option value="" selected placeholder disabled hidden>My Lists</option>
+                        <option value="">None</option>
+                        <option value="listItem1">List Item 1</option>
+                        <option value="listItem2">List Item 2</option>
+                        <option value="listItem3">List Item 2</option>
+                    </select>
+                </div>
+            </div>
+
+        </form>
+
+        <div class="row align-items-center">
+            <div class="col-xl-7">
+                <label for="assessmentAdvanced" class="label--assessment-advanced">Advanced</label>
+                    <select name="assessmentAdvanced" id="assessmentAdvanced" class="form-control form-control--transparent text-light input--assessment-advanced">
+                    <option value="advanced1" selected>Ready for sign off</option>
+                    <option value="advanced2">Advanced 2</option>
+                    <option value="advanced3">Advanced 3</option>
+                </select>
+            </div>
+            <div class="col-xl-5">
+                <div class="text-light pl-1">Due within <span class="badge badge--light-blue badge--large">7</span> days</div>
+            </div>
+        </div>
+
+        </div>
+        <!-- /sidebar header/filter -->
+
+        <!-- sidebar coaches select -->
+        <div class="main-sidebar__lower-header">
+
+        <div class="row justify-content-between align-items-center">
+            <div class="col">
+                <span class="check-all-coaches" title="Check/Uncheck All">
+                    <input class="styled-checkbox" id="checkAllCoaches" type="checkbox">
+                    <label for="checkAllCoaches" class="check-all-coaches__label"></label>
+                    <i class="fas fa-chevron-down text-light"></i>
+                </span>
+            </div>
+            <div class="col text-right text-light">
+                Coaches (4)
+            </div>
+        </div>
+
+        </div>
+
+        <div class="main-sidebar__body">
+
+            <ul class="nav nav--coaches flex-column" id="coachesList">
+
+                <li class="nav-item nav-item--coach">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 p-0 text-center">
+                            <input class="styled-checkbox coach-checkbox" id="coach_lee_evans" type="checkbox">
+                            <label for="coach_lee_evans"></label>
+                        </div>
+                        <div class="col-xl-5 pl-0 coach__col">
+                            <img class="user-image user-image--icon mr-1" src="assets/img/user-thumb-simon-ramsay.jpg" alt="Lee Evans"> <div class="user-name">Lee Evans</div>
+                        </div>
+                        <div class="col-xl-5 text-xl-right coach__col">
+                            Ready for signoff <i class="far fa-edit ml-2 text-primary" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item nav-item--coach">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 p-0 text-center">
+                            <input class="styled-checkbox coach-checkbox" id="coach_sarah_manning" type="checkbox">
+                            <label for="coach_sarah_manning"></label>
+                        </div>
+                        <div class="col-xl-5 pl-0 coach__col">
+                            <img class="user-image user-image--icon mr-1" src="assets/img/user-thumb-simon-ramsay.jpg" alt="Sarah Manning"> <div class="user-name">Sarah Manning</div>
+                        </div>
+                        <div class="col-xl-5 text-xl-right coach__col">
+                            Ready for signoff <i class="far fa-edit ml-2 text-primary" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item nav-item--coach">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 p-0 text-center">
+                            <input class="styled-checkbox coach-checkbox" id="coach_simon_ramsay" type="checkbox">
+                            <label for="coach_simon_ramsay"></label>
+                        </div>
+                        <div class="col-xl-5 pl-0 coach__col">
+                            <img class="user-image user-image--icon mr-1" src="assets/img/user-thumb-simon-ramsay.jpg" alt="Simon Ramsay"> <div class="user-name">Simon Ramsay</div>
+                        </div>
+                        <div class="col-xl-5 text-xl-right coach__col">
+                            Ready for signoff <i class="far fa-edit ml-2 text-primary" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item nav-item--coach">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 p-0 text-center">
+                            <input class="styled-checkbox coach-checkbox" id="coach_dawn_french" type="checkbox">
+                            <label for="coach_dawn_french"></label>
+                        </div>
+                        <div class="col-xl-5 pl-0 coach__col">
+                            <img class="user-image user-image--icon mr-1" src="assets/img/user-thumb-simon-ramsay.jpg" alt="Dawn French"> <div class="user-name">Dawn French</div>
+                        </div>
+                        <div class="col-xl-5 text-xl-right coach__col">
+                            Ready for signoff <i class="far fa-edit ml-2 text-primary" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+    <!-- /sidebar coaches select -->
+
+</div>

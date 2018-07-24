@@ -38,6 +38,29 @@
     }
 }
 
+.navbar__link-name {
+    display: none;
+}
+
+.navbar__icon {
+    width: auto;
+}
+
+.navbar--right {
+    .fa-layers {
+        text-align: left;
+    }
+}
+
+.navbar__link-name {
+    margin-left: 0;
+}
+
+.fa-layers-counter {
+    display: block;
+    font-size: 0.75rem;
+}
+
 .assessment-due-card {
    min-width: 300px;
 }
@@ -86,4 +109,9 @@
 
 .accordion-row__item--files {
     margin: 1rem 0;
+}
+
+.navbar-toggler.sidebar-toggler {
+    display: block;
+    margin-right: 1rem;
 }

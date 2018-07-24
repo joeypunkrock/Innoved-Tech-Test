@@ -1,0 +1,167 @@
+<!-- current coach -->
+
+    <!-- user card -->
+    <div class="user-card d-flex flex-wrap flex-md-nowrap align-items-center">
+        <img class="user-image user-card__user-image mr-3" src="assets/img/user-thumb-simon-ramsay.jpg" alt="Simon Ramsay" title="Simon Ramsay">
+        <div class="user-card__content">
+
+            <div class="dropdown show mb-1">
+                <a class="dropdown-toggle user-card__name" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Simon Ramsay</a>
+            
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+
+            <p class="user-card__category mb-0">Manchester City - Under 16s</p>
+
+        </div>
+    </div>
+    <!-- /user card -->
+
+    <!-- score cards -->
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center score-cards-holder">
+
+        <div class="card card--split score-card">
+            <div class="card-body score-card__body d-flex justify-content-around flex-wrap flex-md-nowrap align-items-center">
+            
+            <div class="card__inner text-center">
+                <h5 class="score-card__title mb-0">Completed</h5>
+                <div class="score-card__score text-primary">60%</div>
+            </div>
+
+            <div class="card__inner text-center">
+                <h5 class="score-card__title mb-0">Required</h5>
+                <div class="score-card__score text-success">100%</div>
+            </div>
+
+            </div>
+        </div>
+
+        <div class="card card--split score-card">
+            <div class="card-body score-card__body d-flex justify-content-around flex-wrap flex-md-nowrap align-items-center">
+                
+                <div class="card__inner text-center">
+                    <h5 class="score-card__title mb-0">Current Score</h5>
+                    <div class="score-card__score text-primary">46</div>
+                </div>
+
+                <div class="card__inner text-center">
+                    <h5 class="score-card__title mb-0">Target Score</h5>
+                    <div class="score-card__score text-success">72</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- /score cards -->
+
+    </div>
+
+    <div class="row">
+
+    <div class="col-xl-4 col-lg-12 order-xl-12 column--assessment-due">
+        
+        <!-- assessment due date -->
+        <div class="flex-row-reverse row--assessment-due">
+            <div class="card assessment-due-card">
+                <div class="card-body card-body--small">
+                    <i class="far fa-calendar-alt mr-2" aria-hidden="false"></i> Assessment due: 05 / July / 2018
+                </div>
+            </div>
+        </div>
+        <!-- /assessment due date -->
+
+        <div class="flex-row-reverse row--assessment-complete-button">
+            <button id="assessmentCompleteButton" class="btn btn-primary assessment-complete-button disabled" title="Assessment is not yet completed" data-toggle="tooltip">Completed</button>
+        </div>
+
+    </div>
+
+    <div class="col-xl-8 col-lg-12 order-xl-1">
+
+        <!-- assessment nav -->
+        <div class="assessment-progress">
+
+        <nav class="navbar navbar-expand-md assessment-nav">
+        
+            <div id="navbarAssessment">
+
+                <ul class="navbar-nav navbar-nav--assessment justify-content-around">
+
+                    <li class="nav-item assessment-nav__nav-item">
+                    <a class="nav-link assessment-link active" link="scores" href="#">
+                        <div><i class="fas fa-chart-pie" aria-hidden="false"></i></div>
+                        Scores
+                    </a>
+                    <div class="step-status step-status--incomplete" title="Incomplete" data-toggle="tooltip">
+                        <span class="sr-only">Incomplete</span>
+                    </div>
+                    </li>
+                    <li class="nav-item assessment-nav__nav-item">
+                    <a class="nav-link assessment-link" link="goals" href="#">
+                        <div><i class="far fa-chart-bar" aria-hidden="false"></i></div>
+                        Goals
+                    </a>
+                    <div class="step-status step-status--complete" title="Complete" data-toggle="tooltip">
+                        <span class="sr-only">Complete</span>
+                    </div>
+                    </li>
+                    <li class="nav-item assessment-nav__nav-item">
+                    <a class="nav-link assessment-link" link="questions" href="#">
+                        <div><i class="fas fa-list-ol" aria-hidden="false"></i></div>
+                        Questions
+                    </a>
+                    <div class="step-status step-status--incomplete" title="Incomplete" data-toggle="tooltip">
+                        <span class="sr-only">Incomplete</span>
+                    </div>
+                    </li>
+                    <li class="nav-item assessment-nav__nav-item">
+                    <a class="nav-link assessment-link" link="comments" href="#">
+                        <div><i class="far fa-comment-dots" aria-hidden="false"></i></div>
+                        Comments
+                    </a>
+                    <div class="step-status step-status--complete" title="Complete" data-toggle="tooltip">
+                        <span class="sr-only">Complete</span>
+                    </div>
+                    </li>
+                    <li class="nav-item assessment-nav__nav-item">
+                    <a class="nav-link assessment-link" link="targets" href="#">
+                        <div><i class="fas fa-list" aria-hidden="false"></i></div>
+                        Targets
+                    </a>
+                    <div class="step-status step-status--complete" title="Complete" data-toggle="tooltip">
+                        <span class="sr-only">Complete</span>
+                    </div>
+                    </li>
+                    <li class="nav-item assessment-nav__nav-item">
+                    <a class="nav-link assessment-link disabled" link="signoff" href="#">
+                        <div><i class="far fa-edit" aria-hidden="false"></i></div>
+                        Signoff
+                    </a>
+                    <div class="step-status step-status--locked" title="Locked" data-toggle="tooltip">
+                        <span class="sr-only">Locked</span>
+                    </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 86%;" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-label progress-label--assessment-nav text-success">86%</div>
+        </div>
+
+        </div>
+        <!-- /assessment nav -->
+
+    </div>
+
+</div>
+<!-- /current coach -->

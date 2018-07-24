@@ -9,7 +9,7 @@
 }
 
 .fa-layers-counter {
-    font-size: 0.75rem;
+    display: none;
 }
 
 .fa-layers-bottom-right {
@@ -108,11 +108,19 @@ select.form-control {
     .nav-item {
         margin: 0 0.5rem;
     }
+    .fa-layers {
+        text-align: left;
+    }
+}
+
+.navbar__link-name {
+    margin-left: 0.5rem;
 }
 
 .navbar__icon {
     font-size: 1.125rem;
     color: $navbar-icon-color;
+    width: 20px;
 }
 
 .nav-link:hover {
@@ -123,33 +131,6 @@ select.form-control {
 
 .navbar__icon--dropdown {
     margin-right: 0.35rem;
-}
-
-.pseudo-border {
-    position: relative;
-    &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 1px;
-        height: 18px;
-        top: 0;
-        bottom: 0;
-        margin: auto 0;
-        background-color: $navbar-icon-color;
-    }
-}
-
-.pseudo-border--right {
-    &::before {
-        right: 0;
-    }
-}
-
-.pseudo-border--left {
-    &::before {
-        left: 0;
-    }
 }
 
 .nav-link.disabled {
