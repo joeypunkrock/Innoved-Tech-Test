@@ -39,7 +39,7 @@
                 <div class="d-flex flex-row-reverse pt-1 pb-1 mb-3">
                   <div class="dropdown show">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-users mr-2" aria-hiden="true"></i> Assessment roles
+                      <i class="fas fa-users mr-2" aria-hidden="true"></i> Assessment roles
                     </a>
                   
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">

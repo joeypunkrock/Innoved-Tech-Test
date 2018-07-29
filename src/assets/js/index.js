@@ -44,13 +44,13 @@ getAssessmentSection('scores');
 //assessment navigation
 $('.assessment-link').on('click', function(e) {
     e.preventDefault();
-    const navItem = $(this);
+    var navItem = $(this);
 
     //check if link is not disabled
     if( !$(this).hasClass('disabled') ) {
 
         //get the link attribute name and load the matching .html page
-        const link = $(this).attr('link');
+        var link = $(this).attr('data-link');
         getAssessmentSection(link);
 
         //set the correct nav item to the active state
@@ -63,23 +63,24 @@ $('.assessment-link').on('click', function(e) {
 //show collapsable element
 $(document).on("click", '.show-collapse', function(e) { 
     e.preventDefault();
-    const element = $(this).attr('element');
+    var element = $(this).attr('element');
     $(element).collapse('show');
 });
 
 //hide collapsable element
 $(document).on("click", '.hide-collapse', function(e) { 
     e.preventDefault();
-    const element = $(this).attr('element');
+    var element = $(this).attr('element');
     $(element).collapse('hide');
 });
 
 //check/uncheck all coaches in coaches list
 $('#checkAllCoaches').change(function() {
+    var coachCheckbox = $('#coachesList').find('.coach-checkbox');
     if (this.checked) {
-        $('#coachesList').find('.coach-checkbox').prop('checked', true);
+        coachCheckbox.prop('checked', true);
     } else {
-        $('#coachesList').find('.coach-checkbox').prop('checked', false);
+        coachCheckbox.prop('checked', false);
     }
 });
 
@@ -122,7 +123,7 @@ $('#checkAllCoaches').change(function() {
 /* /Smart Resize */
 
 //init slideout (sidebar)
-const slideout = new Slideout({
+var slideout = new Slideout({
     'panel': document.getElementById('main'),
     'menu': document.getElementById('sidebar-main'),
     'padding': 256,
@@ -139,10 +140,8 @@ function setSidebarPos() {
     var detach = $('body').find(".main-sidebar").detach();
     if (window.matchMedia('(min-width: 992px)').matches) {
         $(detach).appendTo($('body').find("#sidebarStatic"));
-        console.log('desktop');
     } else {
         $(detach).appendTo($('body').find("#sidebarSlidout"));
-        console.log('mobile');
     }
 }
 
