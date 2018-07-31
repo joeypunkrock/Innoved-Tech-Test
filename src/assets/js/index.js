@@ -140,6 +140,7 @@ function setSidebarPos() {
     var detach = $('body').find(".main-sidebar").detach();
     if (window.matchMedia('(min-width: 992px)').matches) {
         $(detach).appendTo($('body').find("#sidebarStatic"));
+        $('.slideout-panel').css({'transform':'translateX(0)'});
     } else {
         $(detach).appendTo($('body').find("#sidebarSlidout"));
     }
